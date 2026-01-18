@@ -2,7 +2,10 @@ export const tours = [
     {
         id: "otuzco",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuB695eg1qgbXIHDZtDYIGQHJq-8IYiwuwyNIsiuiyvoG39vlpxXpD5JQZCzP3BRCMgVwt3B2l1fKYJJPw87niD22G5SGT0OVUpvfsvi58hhe2WlAwbbpa1aeO9i_ngVcwjmA2w_INNiaBg3fM5ypuq28KN2kh3t-re3nWJv5moc6ft7jrlZDAB84vaWy4lYCGdiR4VfQzy78VCWbxN2Cv4WgRlH2tv1nt_5l1AcUs_Moq0xqmrfK_Aus8BsXOVO3U2579f1_4auUA16"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuB695eg1qgbXIHDZtDYIGQHJq-8IYiwuwyNIsiuiyvoG39vlpxXpD5JQZCzP3BRCMgVwt3B2l1fKYJJPw87niD22G5SGT0OVUpvfsvi58hhe2WlAwbbpa1aeO9i_ngVcwjmA2w_INNiaBg3fM5ypuq28KN2kh3t-re3nWJv5moc6ft7jrlZDAB84vaWy4lYCGdiR4VfQzy78VCWbxN2Cv4WgRlH2tv1nt_5l1AcUs_Moq0xqmrfK_Aus8BsXOVO3U2579f1_4auUA16",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ventanas_de_Otuzco.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e9/Ventanillas_de_Otuzco%2C_Peru.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/3/3b/Las_Ventanillas_de_Otuzco.jpg"
         ],
         rating: 4.8,
         reviews: 124,
@@ -157,7 +160,10 @@ export const tours = [
     {
         id: "porcon",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCj5KQTti6ZgLfCgCgvn-zWCFgHxKREMNnVaznlFYR0yANqraCD97xuGt7_w3Aa_IiAy1grGKOaAs6hsVybv9iDEuFVeCg-qO-29Fimeo2L-wJpOSJ3SD7y1-WNMbZPKQQIgVtalSEKV3FttM0FzYvI5urGG5SSHUrjZYp_3f87hto74XMNi5LlRKUc_F2BynKi-dbhBNyXFeW2G_MBiPqPi8809SI5wx2dznm1pHRdBSYXdZYIhtkUZVQQMLtrwvBZF7ulyy_M-weW"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuCj5KQTti6ZgLfCgCgvn-zWCFgHxKREMNnVaznlFYR0yANqraCD97xuGt7_w3Aa_IiAy1grGKOaAs6hsVybv9iDEuFVeCg-qO-29Fimeo2L-wJpOSJ3SD7y1-WNMbZPKQQIgVtalSEKV3FttM0FzYvI5urGG5SSHUrjZYp_3f87hto74XMNi5LlRKUc_F2BynKi-dbhBNyXFeW2G_MBiPqPi8809SI5wx2dznm1pHRdBSYXdZYIhtkUZVQQMLtrwvBZF7ulyy_M-weW",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/7/77/Granja_Porc%C3%B3n_-_View.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg"
         ],
         rating: 4.7,
         reviews: 95,
@@ -213,7 +219,10 @@ export const tours = [
     {
         id: "namora",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWEVPF_D5-SKSLaT_NwuVJxxEGQ3ny45mqR-RR1dI9zS31ls46DP0RGiOaZVIjZJSNmZShDrlYqlwy3fPoYlxUHNCKdC2jkB7yevc-Zo4thoeD8Bce0Dp-Qe5bBTfWRQYo2d9qyjioMcp4A_7-_U7Z974u9grfXcBIqMqC7EoAzuyn4DRRoQ6hXhLnoQbH6_5Lihcl-414wQZ0XjpC0So24rPMWIUFcyYfaVyvteYSRQLtPOrAzT5NoAP1sLCLISFtq2s1n9Z-IH"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWEVPF_D5-SKSLaT_NwuVJxxEGQ3ny45mqR-RR1dI9zS31ls46DP0RGiOaZVIjZJSNmZShDrlYqlwy3fPoYlxUHNCKdC2jkB7yevc-Zo4thoeD8Bce0Dp-Qe5bBTfWRQYo2d9qyjioMcp4A_7-_U7Z974u9grfXcBIqMqC7EoAzuyn4DRRoQ6hXhLnoQbH6_5Lihcl-414wQZ0XjpC0So24rPMWIUFcyYfaVyvteYSRQLtPOrAzT5NoAP1sLCLISFtq2s1n9Z-IH",
+            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/b/b3/Laguna_San_Nicol%C3%A1s_-_panoramio_%282%29.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg"
         ],
         rating: 4.6,
         reviews: 60,
@@ -249,7 +258,10 @@ export const tours = [
     {
         id: "collpa",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuBItH20Od7WBYTBMaacs8E9Iam3XYb-m5hkvm7fqHDuHc_44vPk1oOD84jr0EytQuosazRVyOwhOvkpkc5Zdx1f0nIKGl52Ob8n3SM1_0A80qLSmjfazFD3deCzGbTDHzMs1U_lhEvoP5VNAp5FYGN0jvGqANSwUgdzOuz0NMJZ9eAH51JWuOnd0lqWka-7Y_R-I0Ra32VJYa9Q1N-Ivcnzk34ck-g902wgCO2kMMdx_KXKaB50LvG6fvgA9zYHcnhGaJzOgPU0hHKM"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuBItH20Od7WBYTBMaacs8E9Iam3XYb-m5hkvm7fqHDuHc_44vPk1oOD84jr0EytQuosazRVyOwhOvkpkc5Zdx1f0nIKGl52Ob8n3SM1_0A80qLSmjfazFD3deCzGbTDHzMs1U_lhEvoP5VNAp5FYGN0jvGqANSwUgdzOuz0NMJZ9eAH51JWuOnd0lqWka-7Y_R-I0Ra32VJYa9Q1N-Ivcnzk34ck-g902wgCO2kMMdx_KXKaB50LvG6fvgA9zYHcnhGaJzOgPU0hHKM",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/HACIENDA_LA_COLPA_01.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/HACIENDA_LA_COLPA_04.jpg",
+            "https://commons.wikimedia.org/wiki/Special:FilePath/HACIENDA_LA_COLPA_01.jpg"
         ],
         rating: 4.8,
         reviews: 150,
@@ -285,6 +297,9 @@ export const tours = [
     {
         id: "yanamarca",
         images: [
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-QkyN672jnJHlYDVkNx8JsstVSbTKDr1z7jzd6anl0T6BnhqIagYG8wnYUwdBcd0X5n9iJLI0kCl19UoExeHaliucAFShxVgnF0PIQP4MmW1MtD2GJZvQmu4ewa7RZcvvbKlKEXBxmguCW9C1lxYTUO3KSceCkUnxgGMD4_ZAJvEdebxQ1vp3xRrAkSrlp_HOih3AY_eIzixNlvalMCwDCemu2m5m5-5_zWE-TWa1b2axQafRwE2ORetC9JVvP-b65Eqnu6L7SG0E",
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-QkyN672jnJHlYDVkNx8JsstVSbTKDr1z7jzd6anl0T6BnhqIagYG8wnYUwdBcd0X5n9iJLI0kCl19UoExeHaliucAFShxVgnF0PIQP4MmW1MtD2GJZvQmu4ewa7RZcvvbKlKEXBxmguCW9C1lxYTUO3KSceCkUnxgGMD4_ZAJvEdebxQ1vp3xRrAkSrlp_HOih3AY_eIzixNlvalMCwDCemu2m5m5-5_zWE-TWa1b2axQafRwE2ORetC9JVvP-b65Eqnu6L7SG0E",
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-QkyN672jnJHlYDVkNx8JsstVSbTKDr1z7jzd6anl0T6BnhqIagYG8wnYUwdBcd0X5n9iJLI0kCl19UoExeHaliucAFShxVgnF0PIQP4MmW1MtD2GJZvQmu4ewa7RZcvvbKlKEXBxmguCW9C1lxYTUO3KSceCkUnxgGMD4_ZAJvEdebxQ1vp3xRrAkSrlp_HOih3AY_eIzixNlvalMCwDCemu2m5m5-5_zWE-TWa1b2axQafRwE2ORetC9JVvP-b65Eqnu6L7SG0E",
             "https://lh3.googleusercontent.com/aida-public/AB6AXuC-QkyN672jnJHlYDVkNx8JsstVSbTKDr1z7jzd6anl0T6BnhqIagYG8wnYUwdBcd0X5n9iJLI0kCl19UoExeHaliucAFShxVgnF0PIQP4MmW1MtD2GJZvQmu4ewa7RZcvvbKlKEXBxmguCW9C1lxYTUO3KSceCkUnxgGMD4_ZAJvEdebxQ1vp3xRrAkSrlp_HOih3AY_eIzixNlvalMCwDCemu2m5m5-5_zWE-TWa1b2axQafRwE2ORetC9JVvP-b65Eqnu6L7SG0E"
         ],
         rating: 4.5,
