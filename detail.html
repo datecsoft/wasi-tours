@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Wasi Tours - Detalles</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <link <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#004D9F",
+                        "secondary": "#F01A22",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1c2630",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-white overflow-x-hidden antialiased">
+    <div class="relative flex min-h-screen flex-col">
+        <!-- Header -->
+        <div
+            class="sticky top-0 z-50 w-full border-b border-solid border-b-[#f0f2f4] dark:border-b-gray-800 bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-sm">
+            <div class="layout-container flex justify-center w-full">
+                <div class="flex flex-col max-w-[1280px] w-full">
+                    <header class="flex items-center justify-between whitespace-nowrap px-4 lg:px-10 py-4">
+                        <div class="flex items-center gap-3 text-[#111418] dark:text-white">
+                            <a href="index.html" class="flex items-center gap-3">
+                                <img src="assets/images/logo.png" alt="Wasi Tours Logo" class="h-10 w-auto" />
+                                <h2
+                                    class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">
+                                    Wasi Tours</h2>
+                            </a>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+                            <div class="flex items-center gap-8">
+                                <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors"
+                                    href="index.html#destinos" data-i18n="nav.destinations">Destinos</a>
+                                <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors"
+                                    href="index.html#paquetes" data-i18n="nav.packages">Paquetes</a>
+                                <a class="text-[#111418] dark:text-gray-200 text-sm font-medium hover:text-primary transition-colors"
+                                    href="#" data-i18n="nav.about">Nosotros</a>
+                            </div>
+                            <div class="flex items-center gap-2 border-l border-gray-200 dark:border-gray-700 pl-6">
+                                <button
+                                    class="text-sm font-bold text-primary cursor-pointer hover:text-primary transition-colors focus:outline-none"
+                                    data-lang-toggle="es">ES</button>
+                                <button
+                                    class="text-sm text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 cursor-pointer transition-colors focus:outline-none"
+                                    data-lang-toggle="en">EN</button>
+                            </div>
+                        </div>
+                        <button class="md:hidden p-2 text-gray-600 dark:text-gray-200" aria-label="Menu">
+                            <span class="material-symbols-outlined">menu</span>
+                        </button>
+                    </header>
+                </div>
+            </div>
+        </div>
+
+        <main class="flex-1 w-full max-w-7xl mx-auto px-4 md:px-10 py-6" id="detail-page-content">
+            <!-- Breadcrumbs -->
+            <div class="flex flex-wrap items-center gap-2 mb-6">
+                <a class="text-[#617589] hover:text-primary text-sm font-medium" href="index.html">Inicio</a>
+                <span class="material-symbols-outlined text-[#617589] text-xs">chevron_right</span>
+                <span class="text-[#617589] text-sm font-medium">Cajamarca</span>
+                <span class="material-symbols-outlined text-[#617589] text-xs">chevron_right</span>
+                <span class="text-[#111418] dark:text-white text-sm font-medium" id="breadcrumb-title">...</span>
+            </div>
+
+            <!-- Header Content -->
+            <div class="flex flex-col md:flex-row justify-between items-start gap-4 mb-6">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] text-[#111418] dark:text-white mb-2"
+                        id="tour-title">
+                        Cargando...
+                    </h1>
+                    <div class="flex flex-wrap items-center gap-4 text-[#617589]">
+                        <span class="flex items-center gap-1 text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">
+                            <span class="material-symbols-outlined text-[18px]">location_on</span>
+                            Cajamarca, Perú
+                        </span>
+                        <span class="flex items-center gap-1 text-sm">
+                            <span class="material-symbols-outlined text-[18px] text-yellow-500 fill-1">star</span>
+                            <span class="text-[#111418] dark:text-white font-bold">4.8</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="w-full h-[300px] md:h-[450px] mb-10 rounded-xl overflow-hidden bg-gray-200 relative group"
+                id="tour-gallery">
+                <img class="main-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    src="" alt="Tour Image" />
+            </div>
+
+            <!-- Two Column Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                <!-- Left Column: Details -->
+                <div class="lg:col-span-2 flex flex-col gap-10">
+                    <!-- Quick Stats -->
+                    <div class="flex flex-wrap gap-4 md:gap-8 border-b border-gray-200 dark:border-gray-800 pb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 bg-primary/10 rounded-full text-primary">
+                                <span class="material-symbols-outlined">schedule</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#617589] font-medium uppercase tracking-wider"
+                                    data-i18n="detail.duration">Duración</p>
+                                <p class="font-bold text-[#111418] dark:text-white" id="tour-duration">--</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 bg-primary/10 rounded-full text-primary">
+                                <span class="material-symbols-outlined">translate</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#617589] font-medium uppercase tracking-wider"
+                                    data-i18n="detail.language">Idioma</p>
+                                <p class="font-bold text-[#111418] dark:text-white">Español / English</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <section>
+                        <h3 class="text-2xl font-bold mb-4 text-[#111418] dark:text-white" data-i18n="detail.about">
+                            Sobre este tour</h3>
+                        <p class="text-[#617589] leading-relaxed mb-4 text-base" id="tour-description">
+                            ...
+                        </p>
+                    </section>
+
+                    <!-- Includes -->
+                    <section
+                        class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 bg-[#f9fafb] dark:bg-gray-800/50 rounded-xl">
+                        <div>
+                            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-4 flex items-center gap-2"
+                                data-i18n="detail.included">Include</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3 text-sm text-[#617589]">
+                                    <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
+                                    Transport / Transporte
+                                </li>
+                                <li class="flex items-start gap-3 text-sm text-[#617589]">
+                                    <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
+                                    Guide / Guía
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column: Sticky Sidebar -->
+                <div class="relative">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        <!-- Booking Card -->
+                        <div
+                            class="bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
+                            <div class="p-6 flex flex-col gap-6">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-3xl font-black text-[#111418] dark:text-white"
+                                        id="tour-price">$0</span>
+                                    <span class="text-sm text-[#617589]" data-i18n="card.perPerson">/ persona</span>
+                                </div>
+                                <a href="https://wa.me/51910913870" target="_blank"
+                                    class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-3.5 px-4 rounded-xl shadow-lg shadow-blue-200 transition-all active:scale-95 flex items-center justify-center gap-2">
+                                    <span data-i18n="whatsapp.cta">Reserva ahora</span>
+                                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                                </a>
+                                <p class="text-center text-xs text-[#617589]" data-i18n="booking.noCharge">No se te
+                                    cobrará nada todavía</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer
+            class="w-full bg-surface-light dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 pt-16 pb-8">
+            <div class="layout-container flex justify-center w-full px-4 lg:px-10">
+                <div class="flex flex-col max-w-[1280px] w-full gap-12">
+                    <div class="flex flex-col gap-4">
+                        <div class="flex items-center gap-2 text-[#111418] dark:text-white">
+                            <img src="assets/images/logo.png" alt="Wasi Tours Logo" class="h-8 w-auto" />
+                            <span class="text-xl font-bold">Wasi Tours</span>
+                        </div>
+                        <p class="text-[#617589] dark:text-gray-400 text-sm">Tu puerta de entrada a la magia de los
+                            Andes.</p>
+                    </div>
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 dark:border-gray-800 pt-8 gap-4">
+                        <p class="text-[#617589] dark:text-gray-500 text-sm" data-i18n="footer.rights">© 2024 Wasi
+                            Tours. Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <a aria-label="Chat en WhatsApp"
+            class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
+            href="https://wa.me/51910913870" target="_blank">
+            <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                </path>
+            </svg>
+        </a>
+
+    </div>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
