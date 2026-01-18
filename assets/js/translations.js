@@ -2,7 +2,7 @@ export const translations = {
     es: {
         "nav.destinations": "Destinos",
         "nav.packages": "Paquetes",
-        "nav.about": "Nosotros",
+        "nav.about": "Testimonios",
         "nav.book": "Reservar Ahora",
         "hero.title": "Descubre la Magia de Cajamarca",
         "hero.subtitle": "Viajes inolvidables en el corazón de los Andes con Wasi Tours. Experimenta historia, naturaleza y cultura como nunca antes.",
@@ -53,7 +53,7 @@ export const translations = {
     en: {
         "nav.destinations": "Destinations",
         "nav.packages": "Packages",
-        "nav.about": "About Us",
+        "nav.about": "Testimonials",
         "nav.book": "Book Now",
         "hero.title": "Discover the Magic of Cajamarca",
         "hero.subtitle": "Unforgettable trips in the heart of the Andes with Wasi Tours. Experience history, nature, and culture like never before.",
