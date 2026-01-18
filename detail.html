@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
+<html class="light scroll-smooth" lang="es">
 
 <head>
     <meta charset="utf-8" />
@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap"
         rel="stylesheet" />
-    <link <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
     <link rel="icon" type="image/png" href="assets/images/logo.png" />
@@ -100,23 +100,56 @@
                         Cargando...
                     </h1>
                     <div class="flex flex-wrap items-center gap-4 text-[#617589]">
-                        <span class="flex items-center gap-1 text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">
+                        <span class="flex items-center gap-1 text-sm">
                             <span class="material-symbols-outlined text-[18px]">location_on</span>
-                            Cajamarca, Perú
+                            <span id="tour-location">Cajamarca, Perú</span>
                         </span>
                         <span class="flex items-center gap-1 text-sm">
                             <span class="material-symbols-outlined text-[18px] text-yellow-500 fill-1">star</span>
-                            <span class="text-[#111418] dark:text-white font-bold">4.8</span>
+                            <span class="text-[#111418] dark:text-white font-bold" id="tour-rating">4.8</span>
+                            <span id="tour-reviews-count">(124 reseñas)</span>
                         </span>
                     </div>
+                </div>
+                <div class="flex gap-2 shrink-0">
+                    <button
+                        class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">share</span>
+                        <span class="text-sm font-medium hidden sm:inline">Compartir</span>
+                    </button>
+                    <button
+                        class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                        <span class="material-symbols-outlined text-[20px]">favorite</span>
+                        <span class="text-sm font-medium hidden sm:inline">Guardar</span>
+                    </button>
                 </div>
             </div>
 
             <!-- Image Gallery -->
-            <div class="w-full h-[300px] md:h-[450px] mb-10 rounded-xl overflow-hidden bg-gray-200 relative group"
+            <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 h-[300px] md:h-[450px] gap-3 mb-10 rounded-xl overflow-hidden"
                 id="tour-gallery">
-                <img class="main-image w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    src="" alt="Tour Image" />
+                <div class="md:col-span-2 md:row-span-2 relative group cursor-pointer bg-gray-200">
+                    <img id="gallery-img-0"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        src="" alt="Tour Image 1" />
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors"></div>
+                </div>
+                <div class="relative group cursor-pointer bg-gray-200 hidden md:block">
+                    <img id="gallery-img-1"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        src="" alt="Tour Image 2" />
+                </div>
+                <div class="relative group cursor-pointer bg-gray-200 hidden md:block">
+                    <img id="gallery-img-2"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        src="" alt="Tour Image 3" />
+                </div>
+                <div class="relative group cursor-pointer bg-gray-200 hidden md:block">
+                    <img id="gallery-img-3"
+                        class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        src="" alt="Tour Image 4" />
+                </div>
+                <!-- 4th small image or 'view all' button container could go here but adhering to grid structure -->
             </div>
 
             <!-- Two Column Layout -->
@@ -137,12 +170,33 @@
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="p-2.5 bg-primary/10 rounded-full text-primary">
+                                <span class="material-symbols-outlined">group</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#617589] font-medium uppercase tracking-wider"
+                                    data-i18n="detail.group">Grupo</p>
+                                <p class="font-bold text-[#111418] dark:text-white" id="tour-group">--</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 bg-primary/10 rounded-full text-primary">
                                 <span class="material-symbols-outlined">translate</span>
                             </div>
                             <div>
                                 <p class="text-xs text-[#617589] font-medium uppercase tracking-wider"
                                     data-i18n="detail.language">Idioma</p>
-                                <p class="font-bold text-[#111418] dark:text-white">Español / English</p>
+                                <p class="font-bold text-[#111418] dark:text-white" id="tour-language">Español / English
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 bg-primary/10 rounded-full text-primary">
+                                <span class="material-symbols-outlined">confirmation_number</span>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#617589] font-medium uppercase tracking-wider"
+                                    data-i18n="detail.type">Tipo</p>
+                                <p class="font-bold text-[#111418] dark:text-white" id="tour-type">--</p>
                             </div>
                         </div>
                     </div>
@@ -156,24 +210,106 @@
                         </p>
                     </section>
 
-                    <!-- Includes -->
+                    <!-- Itinerary -->
+                    <section>
+                        <h3 class="text-2xl font-bold mb-6 text-[#111418] dark:text-white" data-i18n="detail.itinerary">
+                            Itinerario</h3>
+                        <div class="relative pl-4 border-l-2 border-dashed border-gray-200 dark:border-gray-800 space-y-8"
+                            id="tour-itinerary">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </section>
+
+                    <!-- Includes / Not Includes -->
                     <section
                         class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 bg-[#f9fafb] dark:bg-gray-800/50 rounded-xl">
                         <div>
                             <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-4 flex items-center gap-2"
-                                data-i18n="detail.included">Include</h4>
-                            <ul class="space-y-3">
-                                <li class="flex items-start gap-3 text-sm text-[#617589]">
-                                    <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
-                                    Transport / Transporte
-                                </li>
-                                <li class="flex items-start gap-3 text-sm text-[#617589]">
-                                    <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
-                                    Guide / Guía
-                                </li>
+                                data-i18n="detail.included">
+                                <span class="material-symbols-outlined text-green-600">check_circle</span>
+                                Incluye
+                            </h4>
+                            <ul class="space-y-3" id="tour-includes">
+                                <!-- Dynamic Content -->
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-[#111418] dark:text-white mb-4 flex items-center gap-2"
+                                data-i18n="detail.notIncluded">
+                                <span class="material-symbols-outlined text-red-500">cancel</span>
+                                No incluye
+                            </h4>
+                            <ul class="space-y-3" id="tour-not-included">
+                                <!-- Dynamic Content -->
                             </ul>
                         </div>
                     </section>
+
+                    <!-- Location Map Placeholder -->
+                    <section>
+                        <h3 class="text-2xl font-bold mb-4 text-[#111418] dark:text-white" data-i18n="detail.location">
+                            Ubicación</h3>
+                        <div class="h-[300px] w-full bg-gray-200 rounded-xl overflow-hidden relative">
+                            <img alt="Map of Cajamarca region" class="w-full h-full object-cover opacity-80"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTjD0i5Q5_FZFEkzkRm50nSd2JO-MdyhFeQd9xFl0poaDT-JL86GFCN_qQnwDLfLAoLA1XipObc7lZs4XHjbxd3jFA07NKcV2JV-pHVNZEY_kLS5YLUC0X46Lfrh07Kh5vSW9h4wd10DvzD73eApOPQ9D-yQBq9az5avH6v-exBvY_8tvc8Mg0b7-sU_DzuBD5AarRdNqS5Wrygi-L3arftThD-_3IWIryR_7nz3iYPGUjnGToK4cW4yUqjBIWdtI1qJ8glcjvzUAP" />
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/10">
+                                <button
+                                    class="bg-white text-primary font-bold px-6 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-gray-50 transition-transform hover:scale-105">
+                                    <span class="material-symbols-outlined">map</span>
+                                    <span data-i18n="detail.interactiveMap">Ver en mapa interactivo</span>
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Reviews -->
+                    <section>
+                        <h3 class="text-2xl font-bold mb-6 text-[#111418] dark:text-white" data-i18n="detail.reviews">
+                            Reseñas de viajeros</h3>
+                        <!-- Rating Summary Component (Static for now, could be dynamic) -->
+                        <div
+                            class="bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 p-6 mb-8">
+                            <div class="flex flex-wrap gap-x-8 gap-y-6">
+                                <div class="flex flex-col gap-2">
+                                    <p class="text-[#111418] dark:text-white text-5xl font-black leading-tight tracking-[-0.033em]"
+                                        id="tour-rating-large">4.8</p>
+                                    <div class="flex gap-0.5 text-yellow-500">
+                                        <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+                                        <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+                                        <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+                                        <span class="material-symbols-outlined text-[20px] fill-1">star</span>
+                                        <span class="material-symbols-outlined text-[20px] fill-1">star_half</span>
+                                    </div>
+                                    <p class="text-[#617589] text-sm font-normal" id="tour-reviews-count-large">Basado
+                                        en 124 opiniones</p>
+                                </div>
+                                <div class="grid min-w-[200px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-2">
+                                    <!-- Static bars for visual finish -->
+                                    <p class="text-[#111418] dark:text-gray-300 text-xs font-bold">5</p>
+                                    <div
+                                        class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#dbe0e6] dark:bg-gray-700">
+                                        <div class="rounded-full bg-primary" style="width: 78%;"></div>
+                                    </div>
+                                    <p class="text-[#617589] text-xs font-medium text-right">78%</p>
+                                    <p class="text-[#111418] dark:text-gray-300 text-xs font-bold">4</p>
+                                    <div
+                                        class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#dbe0e6] dark:bg-gray-700">
+                                        <div class="rounded-full bg-primary" style="width: 15%;"></div>
+                                    </div>
+                                    <p class="text-[#617589] text-xs font-medium text-right">15%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- FAQ Section -->
+                    <div class="max-w-3xl border-t border-gray-200 dark:border-gray-800 pt-10">
+                        <h3 class="text-2xl font-bold mb-6 text-[#111418] dark:text-white" data-i18n="detail.faq">
+                            Preguntas Frecuentes</h3>
+                        <div class="flex flex-col gap-4" id="tour-faq">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right Column: Sticky Sidebar -->
@@ -184,6 +320,7 @@
                             class="bg-white dark:bg-gray-900 rounded-xl shadow-lg border border-gray-100 dark:border-gray-800 overflow-hidden">
                             <div class="p-6 flex flex-col gap-6">
                                 <div class="flex items-baseline gap-1">
+                                    <span class="text-xs text-[#617589] line-through" id="tour-price-old"></span>
                                     <span class="text-3xl font-black text-[#111418] dark:text-white"
                                         id="tour-price">$0</span>
                                     <span class="text-sm text-[#617589]" data-i18n="card.perPerson">/ persona</span>
@@ -196,6 +333,18 @@
                                 <p class="text-center text-xs text-[#617589]" data-i18n="booking.noCharge">No se te
                                     cobrará nada todavía</p>
                             </div>
+                        </div>
+                        <!-- Help Box -->
+                        <div
+                            class="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4 border border-gray-100 dark:border-gray-800">
+                            <h5 class="font-bold text-[#111418] dark:text-white mb-2 text-sm"
+                                data-i18n="booking.questions">¿Tienes dudas?</h5>
+                            <p class="text-xs text-[#617589] mb-3">Contacta con nuestro equipo de soporte local.</p>
+                            <a href="https://wa.me/51910913870" target="_bank"
+                                class="flex justify-center w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-[#111418] dark:text-white font-bold py-2 rounded-lg text-sm hover:bg-gray-50 dark:hover:bg-gray-700"
+                                data-i18n="booking.support">
+                                Chat con soporte
+                            </a>
                         </div>
                     </div>
                 </div>

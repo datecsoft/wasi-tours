@@ -109,7 +109,7 @@ function renderFeaturedTours() {
                     ${tour.description[currentLang]}
                 </p>
                 <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center">
-                    <span class="text-primary font-bold text-lg">$${tour.price} <span class="text-xs text-gray-400 font-normal" data-i18n="card.perPerson">${translations[currentLang]["card.perPerson"]}</span></span>
+                    <span class="text-primary font-bold text-lg">${currentLang === 'es' ? 'S/ ' + tour.price.es : '$' + tour.price.en} <span class="text-xs text-gray-400 font-normal" data-i18n="card.perPerson">${translations[currentLang]["card.perPerson"]}</span></span>
                     <a href="detail.html#${tour.id}" class="text-sm font-bold text-[#111418] dark:text-white hover:text-secondary" data-i18n="card.details">
                         ${translations[currentLang]["card.details"]}
                     </a>
@@ -140,34 +140,97 @@ function initDetailPage() {
     }
 }
 
-function renderTourDetail(tour) {
-    if (!tour) return;
+// Update simple text elements
+setText('tour-title', tour.title[currentLang]);
+setText('breadcrumb-title', tour.title[currentLang]);
+setText('tour-location', tour.location || 'Cajamarca, Perú');
+setText('tour-rating', tour.rating);
+setText('tour-rating-large', tour.rating);
+setText('tour-reviews-count', `(${tour.reviews} ${currentLang === 'es' ? 'reseñas' : 'reviews'})`);
+setText('tour-reviews-count-large', `${currentLang === 'es' ? 'Basado en' : 'Based on'} ${tour.reviews} ${currentLang === 'es' ? 'opiniones' : 'reviews'}`);
 
-    // Update simple text elements
-    setText('tour-title', tour.title[currentLang]);
-    setText('tour-price', `S/ ${tour.price * 3.7}`); // Approx exchange rate or just use USD? The snippets used S/ in detail and $ in landing. I will stick to USD or consistent currency. Landing had $35. Detail had S/150. I'll stick to $ in global and S/ or $ consistently. Let's use $ for now based on tours.js. But wait, local market uses Soles. Let's assume price in tours.js is USD and we convert or display USD.
-    // Actually, let's just display what's in tours.js. I used simple numbers. Let's assume USD for international appeal, or Soles. 
-    // The prompt says "Sell... targeting BOTH Local ... and International". 
-    // I will stick to USD in the display for now or add a currency toggle later. I'll use USD symbol in code.
-    // Wait, the detail snippet had "S/ 150". 
-    // I'll update tours.js to be Soles? No, keep it simple. I'll just render "$" + price.
+// Price
+const price = currentLang === 'es' ? `S/ ${tour.price.es}` : `$${tour.price.en}`;
+setText('tour-price', price);
+// Fake old price for effect (generic logic + 20%)
+const oldPrice = currentLang === 'es' ? `S/ ${Math.round(tour.price.es * 1.2)}` : `$${Math.round(tour.price.en * 1.2)}`;
+setText('tour-price-old', oldPrice);
 
-    // Images
-    const gallery = document.getElementById('tour-gallery');
-    if (gallery) {
-        // logic to update gallery images
-        const mainImg = gallery.querySelector('.main-image');
-        if (mainImg && tour.images[0]) mainImg.src = tour.images[0];
+// Stats
+setText('tour-duration', tour.duration[currentLang]);
+setText('tour-group', tour.groupSize ? tour.groupSize[currentLang] : (currentLang === 'es' ? 'Max 15 personas' : 'Max 15 people'));
+setText('tour-type', tour.type ? tour.type[currentLang] : 'Turismo');
+
+// Description
+setText('tour-description', tour.fullDescription[currentLang]);
+
+// Images
+const images = tour.images || [];
+for (let i = 0; i < 4; i++) {
+    const imgEl = document.getElementById(`gallery-img-${i}`);
+    if (imgEl) {
+        if (images[i]) {
+            imgEl.src = images[i];
+            imgEl.parentElement.classList.remove('hidden');
+        } else if (images[0]) {
+            // Fallback to first image if not enough images, or hide? 
+            // Better to fill with repeated images or hide. Let's hide if not present, except 0.
+            if (i > 0) imgEl.parentElement.classList.add('hidden');
+            else imgEl.src = images[0];
+        }
     }
+}
 
-    // Description
-    setText('tour-description', tour.fullDescription[currentLang]);
+// Itinerary
+const itineraryContainer = document.getElementById('tour-itinerary');
+if (itineraryContainer && tour.itinerary) {
+    itineraryContainer.innerHTML = tour.itinerary.map(item => `
+            <div class="relative pl-6">
+                <div class="absolute -left-[25px] top-0 bg-white dark:bg-[#111418] border-2 border-primary rounded-full size-4"></div>
+                <span class="text-sm font-bold text-primary mb-1 block">${item.time}</span>
+                <h4 class="text-lg font-bold text-[#111418] dark:text-white">${item.title[currentLang]}</h4>
+                <p class="text-[#617589] text-sm mt-1">${item.desc[currentLang]}</p>
+            </div>
+        `).join('');
+}
 
-    // Breadcrumb
-    setText('breadcrumb-title', tour.title[currentLang]);
+// Includes
+const includesContainer = document.getElementById('tour-includes');
+if (includesContainer && tour.includes) {
+    includesContainer.innerHTML = tour.includes[currentLang].map(item => `
+            <li class="flex items-start gap-3 text-sm text-[#617589]">
+                <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
+                ${item}
+            </li>
+        `).join('');
+}
 
-    // Stats
-    setText('tour-duration', tour.duration[currentLang]);
+// Not Included
+const notIncludedContainer = document.getElementById('tour-not-included');
+if (notIncludedContainer && tour.notIncluded) {
+    notIncludedContainer.innerHTML = tour.notIncluded[currentLang].map(item => `
+            <li class="flex items-start gap-3 text-sm text-[#617589]">
+                <span class="block size-1.5 bg-red-400 rounded-full mt-2"></span>
+                ${item}
+            </li>
+        `).join('');
+}
+
+// FAQ
+const faqContainer = document.getElementById('tour-faq');
+if (faqContainer && tour.faq) {
+    faqContainer.innerHTML = tour.faq.map(item => `
+            <details class="group bg-white dark:bg-gray-900 p-4 rounded-lg border border-gray-200 dark:border-gray-800 open:ring-1 open:ring-primary/20">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-[#111418] dark:text-white">
+                    <span>${item.q[currentLang]}</span>
+                    <span class="transition group-open:rotate-180 material-symbols-outlined">expand_more</span>
+                </summary>
+                <p class="text-[#617589] mt-3 group-open:animate-fadeIn text-sm leading-relaxed">
+                    ${item.a[currentLang]}
+                </p>
+            </details>
+        `).join('');
+}
 }
 
 function setText(id, text) {
