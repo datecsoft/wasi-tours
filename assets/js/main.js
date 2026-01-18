@@ -140,51 +140,55 @@ function initDetailPage() {
     }
 }
 
-// Update simple text elements
-setText('tour-title', tour.title[currentLang]);
-setText('breadcrumb-title', tour.title[currentLang]);
-setText('tour-location', tour.location || 'Cajamarca, Perú');
-setText('tour-rating', tour.rating);
-setText('tour-rating-large', tour.rating);
-setText('tour-reviews-count', `(${tour.reviews} ${currentLang === 'es' ? 'reseñas' : 'reviews'})`);
-setText('tour-reviews-count-large', `${currentLang === 'es' ? 'Basado en' : 'Based on'} ${tour.reviews} ${currentLang === 'es' ? 'opiniones' : 'reviews'}`);
 
-// Price
-const price = currentLang === 'es' ? `S/ ${tour.price.es}` : `$${tour.price.en}`;
-setText('tour-price', price);
-// Fake old price for effect (generic logic + 20%)
-const oldPrice = currentLang === 'es' ? `S/ ${Math.round(tour.price.es * 1.2)}` : `$${Math.round(tour.price.en * 1.2)}`;
-setText('tour-price-old', oldPrice);
+function renderTourDetail(tour) {
+    if (!tour) return;
 
-// Stats
-setText('tour-duration', tour.duration[currentLang]);
-setText('tour-group', tour.groupSize ? tour.groupSize[currentLang] : (currentLang === 'es' ? 'Max 15 personas' : 'Max 15 people'));
-setText('tour-type', tour.type ? tour.type[currentLang] : 'Turismo');
+    // Update simple text elements
+    setText('tour-title', tour.title[currentLang]);
+    setText('breadcrumb-title', tour.title[currentLang]);
+    setText('tour-location', tour.location || 'Cajamarca, Perú');
+    setText('tour-rating', tour.rating);
+    setText('tour-rating-large', tour.rating);
+    setText('tour-reviews-count', `(${tour.reviews} ${currentLang === 'es' ? 'reseñas' : 'reviews'})`);
+    setText('tour-reviews-count-large', `${currentLang === 'es' ? 'Basado en' : 'Based on'} ${tour.reviews} ${currentLang === 'es' ? 'opiniones' : 'reviews'}`);
 
-// Description
-setText('tour-description', tour.fullDescription[currentLang]);
+    // Price
+    const price = currentLang === 'es' ? `S/ ${tour.price.es}` : `$${tour.price.en}`;
+    setText('tour-price', price);
+    // Fake old price for effect (generic logic + 20%)
+    const oldPrice = currentLang === 'es' ? `S/ ${Math.round(tour.price.es * 1.2)}` : `$${Math.round(tour.price.en * 1.2)}`;
+    setText('tour-price-old', oldPrice);
 
-// Images
-const images = tour.images || [];
-for (let i = 0; i < 4; i++) {
-    const imgEl = document.getElementById(`gallery-img-${i}`);
-    if (imgEl) {
-        if (images[i]) {
-            imgEl.src = images[i];
-            imgEl.parentElement.classList.remove('hidden');
-        } else if (images[0]) {
-            // Fallback to first image if not enough images, or hide? 
-            // Better to fill with repeated images or hide. Let's hide if not present, except 0.
-            if (i > 0) imgEl.parentElement.classList.add('hidden');
-            else imgEl.src = images[0];
+    // Stats
+    setText('tour-duration', tour.duration[currentLang]);
+    setText('tour-group', tour.groupSize ? tour.groupSize[currentLang] : (currentLang === 'es' ? 'Max 15 personas' : 'Max 15 people'));
+    setText('tour-type', tour.type ? tour.type[currentLang] : 'Turismo');
+
+    // Description
+    setText('tour-description', tour.fullDescription[currentLang]);
+
+    // Images
+    const images = tour.images || [];
+    for (let i = 0; i < 4; i++) {
+        const imgEl = document.getElementById(`gallery-img-${i}`);
+        if (imgEl) {
+            if (images[i]) {
+                imgEl.src = images[i];
+                imgEl.parentElement.classList.remove('hidden');
+            } else if (images[0]) {
+                // Fallback to first image if not enough images, or hide? 
+                // Better to fill with repeated images or hide. Let's hide if not present, except 0.
+                if (i > 0) imgEl.parentElement.classList.add('hidden');
+                else imgEl.src = images[0];
+            }
         }
     }
-}
 
-// Itinerary
-const itineraryContainer = document.getElementById('tour-itinerary');
-if (itineraryContainer && tour.itinerary) {
-    itineraryContainer.innerHTML = tour.itinerary.map(item => `
+    // Itinerary
+    const itineraryContainer = document.getElementById('tour-itinerary');
+    if (itineraryContainer && tour.itinerary) {
+        itineraryContainer.innerHTML = tour.itinerary.map(item => `
             <div class="relative pl-6">
                 <div class="absolute -left-[25px] top-0 bg-white dark:bg-[#111418] border-2 border-primary rounded-full size-4"></div>
                 <span class="text-sm font-bold text-primary mb-1 block">${item.time}</span>
@@ -192,34 +196,34 @@ if (itineraryContainer && tour.itinerary) {
                 <p class="text-[#617589] text-sm mt-1">${item.desc[currentLang]}</p>
             </div>
         `).join('');
-}
+    }
 
-// Includes
-const includesContainer = document.getElementById('tour-includes');
-if (includesContainer && tour.includes) {
-    includesContainer.innerHTML = tour.includes[currentLang].map(item => `
+    // Includes
+    const includesContainer = document.getElementById('tour-includes');
+    if (includesContainer && tour.includes) {
+        includesContainer.innerHTML = tour.includes[currentLang].map(item => `
             <li class="flex items-start gap-3 text-sm text-[#617589]">
                 <span class="block size-1.5 bg-green-500 rounded-full mt-2"></span>
                 ${item}
             </li>
         `).join('');
-}
+    }
 
-// Not Included
-const notIncludedContainer = document.getElementById('tour-not-included');
-if (notIncludedContainer && tour.notIncluded) {
-    notIncludedContainer.innerHTML = tour.notIncluded[currentLang].map(item => `
+    // Not Included
+    const notIncludedContainer = document.getElementById('tour-not-included');
+    if (notIncludedContainer && tour.notIncluded) {
+        notIncludedContainer.innerHTML = tour.notIncluded[currentLang].map(item => `
             <li class="flex items-start gap-3 text-sm text-[#617589]">
                 <span class="block size-1.5 bg-red-400 rounded-full mt-2"></span>
                 ${item}
             </li>
         `).join('');
-}
+    }
 
-// FAQ
-const faqContainer = document.getElementById('tour-faq');
-if (faqContainer && tour.faq) {
-    faqContainer.innerHTML = tour.faq.map(item => `
+    // FAQ
+    const faqContainer = document.getElementById('tour-faq');
+    if (faqContainer && tour.faq) {
+        faqContainer.innerHTML = tour.faq.map(item => `
             <details class="group bg-white dark:bg-gray-900 p-4 rounded-lg border border-gray-200 dark:border-gray-800 open:ring-1 open:ring-primary/20">
                 <summary class="flex justify-between items-center font-medium cursor-pointer list-none text-[#111418] dark:text-white">
                     <span>${item.q[currentLang]}</span>
@@ -230,7 +234,7 @@ if (faqContainer && tour.faq) {
                 </p>
             </details>
         `).join('');
-}
+    }
 }
 
 function setText(id, text) {
