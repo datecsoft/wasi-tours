@@ -230,7 +230,7 @@ function renderTourDetail(tour) {
 
     // Images
     const images = tour.images || [];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
         const imgEl = document.getElementById(`gallery-img-${i}`);
         if (imgEl) {
             if (images[i]) {
