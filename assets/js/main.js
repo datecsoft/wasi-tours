@@ -3,6 +3,7 @@ import { tours } from './tours.js';
 
 const DEFAULT_LANG = 'es';
 let currentLang = localStorage.getItem('wasi_lang') || DEFAULT_LANG;
+let currentCategory = 'popular'; // 'popular' or 'private'
 
 document.addEventListener('DOMContentLoaded', () => {
     initLanguage();
@@ -11,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Page specific logic
     if (document.getElementById('featured-tours-container')) {
         renderFeaturedTours();
+        // Bind category filtering
+        window.switchCategory = switchCategory; // Make global for onclick
     }
 
     if (document.getElementById('detail-page-content')) {
@@ -25,6 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+function switchCategory(category) {
+    currentCategory = category;
+    renderFeaturedTours();
+
+    // Update button styles
+    const tabPopular = document.getElementById('tab-popular');
+    const tabPrivate = document.getElementById('tab-private');
+
+    if (category === 'popular') {
+        tabPopular.classList.add('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPopular.classList.remove('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
+
+        tabPrivate.classList.remove('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPrivate.classList.add('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
+    } else {
+        tabPrivate.classList.add('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPrivate.classList.remove('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
+
+        tabPopular.classList.remove('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPopular.classList.add('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
+    }
+}
 
 function initLanguage() {
     setLanguage(currentLang);
@@ -87,14 +113,22 @@ function renderFeaturedTours() {
     const container = document.getElementById('featured-tours-container');
     if (!container) return;
 
-    container.innerHTML = tours.map(tour => `
-        <div class="group flex flex-col gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800">
+    // Filter tours based on category
+    // Default 'popular' if no category is set on the object (backward compatibility)
+    const filteredTours = tours.filter(tour => {
+        const tourCat = tour.category || 'popular';
+        return tourCat === currentCategory;
+    });
+
+    container.innerHTML = filteredTours.map(tour => `
+        <div class="group flex flex-col gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 animate-fadeIn">
             <div class="w-full aspect-video rounded-xl bg-gray-200 overflow-hidden relative">
                 <div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" 
                      style="background-image: url('${tour.images[0]}');"></div>
+                ${tour.duration ? `
                 <div class="absolute top-3 right-3 bg-secondary/90 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold shadow-sm text-white">
                     ${tour.duration[currentLang]}
-                </div>
+                </div>` : ''}
             </div>
             <div>
                 <div class="flex justify-between items-start">
