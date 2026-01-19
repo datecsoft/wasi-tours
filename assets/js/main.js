@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (document.getElementById('detail-page-content')) {
         initDetailPage();
+        startGalleryAutoScroll();
     }
 
     // Bind language toggles
@@ -300,4 +301,38 @@ function renderTourDetail(tour) {
 function setText(id, text) {
     const el = document.getElementById(id);
     if (el) el.textContent = text;
+}
+
+function startGalleryAutoScroll() {
+    const gallery = document.getElementById('tour-gallery');
+    if (!gallery) return;
+
+    let intervalId;
+
+    const startInterval = () => {
+        clearInterval(intervalId);
+        intervalId = setInterval(() => {
+            if (window.innerWidth >= 768) return;
+
+            const firstItem = gallery.firstElementChild;
+            if (!firstItem) return;
+
+            const itemWidth = firstItem.offsetWidth;
+            const gap = 12; // gap-3 is approx 12px
+            const scrollAmount = itemWidth + gap;
+
+            if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - 10) {
+                gallery.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }, 3000);
+    };
+
+    startInterval();
+
+    gallery.addEventListener('touchstart', () => clearInterval(intervalId), { passive: true });
+    gallery.addEventListener('touchend', startInterval, { passive: true });
+
+    window.addEventListener('resize', startInterval);
 }
