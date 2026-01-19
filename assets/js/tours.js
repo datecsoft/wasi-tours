@@ -10,10 +10,10 @@ export const tours = [
         ],
         rating: 4.6,
         reviews: 60,
-        price: { es: 110, en: 30 },
+        price: { es: 60, en: 17 }, // Updated price
         duration: {
-            es: "Medio Día",
-            en: "Half Day"
+            es: "09:30 AM - 03:00 PM",
+            en: "09:30 AM - 03:00 PM"
         },
         groupSize: { es: "Max 12 personas", en: "Max 12 people" },
         type: { es: "Relax", en: "Relax" },
@@ -27,16 +27,24 @@ export const tours = [
             en: "Visit the land of guitars and enjoy a peaceful boat ride on San Nicolas lagoon."
         },
         fullDescription: {
-            es: "Namora es conocido por sus talleres de guitarras y la hermosa Laguna San Nicolás. Disfrutaremos de los paisajes, la artesanía y la gastronomía local.",
-            en: "Namora is known for its guitar workshops and the beautiful San Nicolás Lagoon. We will enjoy the landscapes, crafts, and local cuisine."
+            es: "Namora es conocido por sus talleres de guitarras y la hermosa Laguna San Nicolás. Este tour incluye un recorrido completo por la Alameda de los 14 Incas, formaciones rocosas únicas y talleres artesanales.",
+            en: "Namora is known for its guitar workshops and the beautiful San Nicolás Lagoon. This tour includes a complete tour of the Alameda of the 14 Incas, unique rock formations, and artisan workshops."
         },
         highlights: {
-            es: ["Laguna San Nicolás", "Taller de guitarras", "Paseo en bote"],
-            en: ["San Nicolás Lagoon", "Guitar workshops", "Boat ride"]
+            es: ["Alameda de los 14 incas", "Bosque de piedras (sapitos y tortugas)", "Fábrica de guitarras", "Laguna San Nicolás"],
+            en: ["Alameda of the 14 Incas", "Stone forest (toads and turtles)", "Guitar factory", "San Nicolás Lagoon"]
         },
-        includes: { es: ["Transporte", "Guía", "Paseo en bote"], en: ["Transport", "Guide", "Boat ride"] },
-        notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
+        includes: { es: ["Transporte", "Guía", "Paseo en bote", "Almuerzo"], en: ["Transport", "Guide", "Boat ride", "Lunch"] },
+        notIncluded: { es: [], en: [] },
+        itinerary: [
+            { time: "09:00 AM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Reunión y preparación para la salida.", en: "Meeting and preparation for departure." } },
+            { time: "09:30 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Partida rumbo a Namora.", en: "Departure to Namora." } },
+            { time: "10:30 AM", title: { es: "Alameda y Bosque de Piedras", en: "Alameda & Stone Forest" }, desc: { es: "Visita a la Alameda de los 14 Incas y formaciones rocosas.", en: "Visit to the Alameda of the 14 Incas and rock formations." } },
+            { time: "11:30 AM", title: { es: "Talleres de Guitarras", en: "Guitar Workshops" }, desc: { es: "Demostración de fabricación de guitarras artesanales.", en: "Demonstration of handcrafted guitar making." } },
+            { time: "12:30 PM", title: { es: "Laguna San Nicolás", en: "San Nicolás Lagoon" }, desc: { es: "Paseo en balsas de totora.", en: "Ride on totora reed boats." } },
+            { time: "01:30 PM", title: { es: "Almuerzo", en: "Lunch" }, desc: { es: "Almuerzo típico incluido.", en: "Typical lunch included." } },
+            { time: "03:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
+        ],
         faq: []
     },
     {
@@ -50,10 +58,10 @@ export const tours = [
         ],
         rating: 4.7,
         reviews: 95,
-        price: { es: 150, en: 40 },
+        price: { es: 40, en: 11 }, // Updated price
         duration: {
-            es: "Día Completo",
-            en: "Full Day"
+            es: "09:30 AM - 02:00 PM",
+            en: "09:30 AM - 02:00 PM"
         },
         groupSize: {
             es: "Max 20 personas",
@@ -73,12 +81,12 @@ export const tours = [
             en: "Immerse yourself in traditional farm life surrounded by immense pine forests and wildlife."
         },
         fullDescription: {
-            es: "La Granja Porcón es un ejemplo exitoso de cooperativa agraria en el Perú. Rodeada de bosques de pinos, ofrece turismo rural, zoológico con osos de anteojos, pumas, y actividades de campo como ordeño de vacas.",
-            en: "Granja Porcón is a successful example of an agrarian cooperative in Peru. Surrounded by pine forests, it offers rural tourism, a zoo with spectacled bears, pumas, and field activities such as cow milking."
+            es: "La Granja Porcón es un ejemplo exitoso de cooperativa agraria en el Perú. Disfruta de una experiencia completa de agroturismo rodeado de naturaleza.",
+            en: "Granja Porcón is a successful example of an agrarian cooperative in Peru. Enjoy a complete agrotourism experience surrounded by nature."
         },
         highlights: {
-            es: ["Turismo vivencial", "Bosques de pinos", "Zoológico"],
-            en: ["Experiential tourism", "Pine forests", "Zoo"]
+            es: ["Picapedreros de Huambocancha", "Bosque de pinos", "Zoológico", "Talleres textiles"],
+            en: ["Huambocancha Stone Cutters", "Pine Forests", "Zoo", "Textile workshops"]
         },
         includes: {
             es: ["Transporte", "Guía", "Entrada a Granja Porcón"],
@@ -89,11 +97,12 @@ export const tours = [
             en: ["Lunch"]
         },
         itinerary: [
-            { time: "09:00 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a Porcón.", en: "Heading to Porcon." } },
-            { time: "10:30 AM", title: { es: "Talleres Artesanales", en: "Artisan Workshops" }, desc: { es: "Visita a talleres de picapedreros.", en: "Visit to stone cutters workshops." } },
-            { time: "11:30 AM", title: { es: "Granja Porcón", en: "Porcon Farm" }, desc: { es: "Recorrido por el zoológico y bosque.", en: "Tour of the zoo and forest." } },
-            { time: "02:00 PM", title: { es: "Almuerzo libre", en: "Free lunch" }, desc: { es: "Tiempo para comer (no incluido).", en: "Time to eat (not included)." } },
-            { time: "04:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
+            { time: "09:00 AM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Punto de encuentro.", en: "Meeting point." } },
+            { time: "09:30 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a Porcón.", en: "Heading to Porcon." } },
+            { time: "10:00 AM", title: { es: "Picapedreros", en: "Stone Cutters" }, desc: { es: "Visita a los picapedreros de Huambocancha.", en: "Visit to the Huambocancha stone cutters." } },
+            { time: "11:00 AM", title: { es: "Granja Porcón", en: "Porcon Farm" }, desc: { es: "Recorrido por el zoológico, bosque de pinos y talleres.", en: "Tour of the zoo, pine forest, and workshops." } },
+            { time: "01:00 PM", title: { es: "Tienda de Lácteos", en: "Dairy Shop" }, desc: { es: "Degustación y compra de productos.", en: "Tasting and purchase of products." } },
+            { time: "02:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
         ],
         faq: [
             { q: { es: "¿Hay restaurantes dentro?", en: "Are there restaurants inside?" }, a: { es: "Sí, hay varias opciones típicas.", en: "Yes, there are several typical options." } }
@@ -110,10 +119,10 @@ export const tours = [
         ],
         rating: 4.8,
         reviews: 124,
-        price: { es: 165, en: 45 },
+        price: { es: 40, en: 11 }, // Updated price
         duration: {
-            es: "6 Horas",
-            en: "6 Hours"
+            es: "09:30 AM - 01:40 PM",
+            en: "09:30 AM - 01:40 PM"
         },
         groupSize: {
             es: "Max 15 personas",
@@ -133,12 +142,12 @@ export const tours = [
             en: "Witness the majestic Stone Forest and impressive ancient hydraulic engineering aqueducts."
         },
         fullDescription: {
-            es: "Descubre la majestuosidad de los Andes peruanos con este tour exclusivo a Cumbemayo. Comenzaremos nuestro viaje ascendiendo a través de bosques de pinos y formaciones rocosas únicas conocidas como 'Los Frailones'. Exploraremos el canal prehispánico de Cumbemayo, una obra maestra de ingeniería hidráulica tallada en piedra hace más de 3000 años.",
-            en: "Discover the majesty of the Peruvian Andes with this exclusive tour to Cumbemayo. We will begin our journey ascending through pine forests and unique rock formations known as 'Los Frailones'. We will explore the pre-Hispanic canal of Cumbemayo, a masterpiece of hydraulic engineering carved in stone over 3000 years ago."
+            es: "Descubre la majestuosidad de los Andes peruanos con este tour exclusivo a Cumbemayo, una obra maestra de ingeniería hidráulica tallada en piedra hace más de 3000 años.",
+            en: "Discover the majesty of the Peruvian Andes with this exclusive tour to Cumbemayo, a masterpiece of hydraulic engineering carved in stone over 3000 years ago."
         },
         highlights: {
-            es: ["Bosque de piedras", "Canal prehispánico", "Frailejes"],
-            en: ["Stone forest", "Pre-Hispanic canal", "Frailejes"]
+            es: ["Mirador de Bellavista", "Santuario de Cumbemayo", "Túnel del deseo", "Piedra del sacrificio", "Canales Pre-Incas", "Petroglifos"],
+            en: ["Bellavista Viewpoint", "Cumbemayo Sanctuary", "Tunnel of Desire", "Sacrificial Stone", "Pre-Inca Canals", "Petroglyphs"]
         },
         includes: {
             es: ["Transporte turístico ida y vuelta", "Guía oficial de turismo", "Tickets de ingreso", "Botiquín de primeros auxilios"],
@@ -149,35 +158,16 @@ export const tours = [
             en: ["Lunch or food", "Tips", "Extra expenses"]
         },
         itinerary: [
-            {
-                time: "09:00 AM",
-                title: { es: "Recojo del Hotel", en: "Hotel Pickup" },
-                desc: { es: "Iniciamos el recorrido recogiéndote desde tu hospedaje en el centro.", en: "We start the tour by picking you up from your lodging in the center." }
-            },
-            {
-                time: "10:00 AM",
-                title: { es: "Mirador de Bellavista", en: "Bellavista Viewpoint" },
-                desc: { es: "Parada breve para fotos panorámicas de la ciudad.", en: "Brief stop for panoramic photos of the city." }
-            },
-            {
-                time: "11:00 AM",
-                title: { es: "Bosque de Piedras y Cumbemayo", en: "Stone Forest & Cumbemayo" },
-                desc: { es: "Caminata suave de 1 hora explorando los frailones y el canal.", en: "Gentle 1-hour walk exploring the frailones and the canal." }
-            },
-            {
-                time: "01:30 PM",
-                title: { es: "Retorno a Cajamarca", en: "Return to Cajamarca" },
-                desc: { es: "Fin del tour en la Plaza de Armas.", en: "End of the tour at the Main Square." }
-            }
+            { time: "09:00 AM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Recojo del hotel o punto de encuentro.", en: "Hotel pickup or meeting point." } },
+            { time: "09:30 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Inicio del tour.", en: "Start of the tour." } },
+            { time: "10:00 AM", title: { es: "Mirador de Bellavista", en: "Bellavista Viewpoint" }, desc: { es: "Vista panorámica de la ciudad.", en: "Panoramic view of the city." } },
+            { time: "11:00 AM", title: { es: "Cumbemayo", en: "Cumbemayo" }, desc: { es: "Recorrido por el santuario, bosque de piedras, túnel, piedra del sacrificio y canales.", en: "Tour of the sanctuary, stone forest, tunnel, sacrificial stone, and canals." } },
+            { time: "01:40 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
         ],
         faq: [
             {
                 q: { es: "¿Qué debo llevar?", en: "What should I bring?" },
                 a: { es: "Ropa cómoda, abrigo, agua y bloqueador.", en: "Comfortable clothes, warm clothing, water, and sunscreen." }
-            },
-            {
-                q: { es: "¿Es apto para niños?", en: "Is it suitable for children?" },
-                a: { es: "Sí, mayores de 5 años.", en: "Yes, over 5 years old." }
             }
         ]
     },
@@ -192,10 +182,10 @@ export const tours = [
         ],
         rating: 4.8,
         reviews: 124,
-        price: { es: 130, en: 35 },
+        price: { es: 30, en: 9 }, // Updated price
         duration: {
-            es: "Medio Día",
-            en: "Half Day"
+            es: "03:30 PM - 06:45 PM",
+            en: "03:30 PM - 06:45 PM"
         },
         groupSize: {
             es: "Max 15 personas",
@@ -215,12 +205,12 @@ export const tours = [
             en: "Explore the mysterious pre-Inca necropolis carved directly into volcanic stone cliffs."
         },
         fullDescription: {
-            es: "Las Ventanillas de Otuzco son un sitio arqueológico peruano situado en el distrito de Baños del Inca a 8 km al noroeste de la ciudad de Cajamarca. El sitio es una necrópolis de origen preincaico, anterior a la cultura Cajamarca, excavada en la roca volcánica. Exploraremos las criptas y disfrutaremos del paisaje únicos.",
-            en: "The Ventanillas de Otuzco is a Peruvian archaeological site located in the district of Baños del Inca, 8 km northwest of the city of Cajamarca. The site is a pre-Inca necropolis carved into volcanic rock. We will explore the crypts and enjoy the unique landscape."
+            es: "Las Ventanillas de Otuzco son un sitio arqueológico impresionante. Este tour combina historia, naturaleza y cultura local de Baños del Inca.",
+            en: "The Ventanillas de Otuzco is an impressive archaeological site. This tour combines history, nature, and local culture of Baños del Inca."
         },
         highlights: {
-            es: ["Necrópolis pre-inca", "Vistas panorámicas", "Caminata ligera"],
-            en: ["Pre-Inca necropolis", "Panoramic views", "Light hiking"]
+            es: ["Ventanillas de Otuzco", "Puente colgante", "Feria Artesanal", "Jardín de las Hortensias", "Fábrica de Lácteos"],
+            en: ["Ventanillas de Otuzco", "Suspension bridge", "Craft Fair", "Hydrangea Garden", "Dairy Factory"]
         },
         includes: {
             es: ["Transporte turístico", "Guía oficial", "Entradas"],
@@ -231,33 +221,14 @@ export const tours = [
             en: ["Lunch", "Tips"]
         },
         itinerary: [
-            {
-                time: "09:00 AM",
-                title: { es: "Recojo del Hotel", en: "Hotel Pickup" },
-                desc: { es: "Inicio del tour desde su hotel.", en: "Start of the tour from your hotel." }
-            },
-            {
-                time: "09:30 AM",
-                title: { es: "Jardín de las Hortensias", en: "Hydrangea Garden" },
-                desc: { es: "Breve parada para apreciar flores locales.", en: "Brief stop to appreciate local flowers." }
-            },
-            {
-                time: "10:30 AM",
-                title: { es: "Ventanillas de Otuzco", en: "Ventanillas de Otuzco" },
-                desc: { es: "Visita guiada por la necrópolis.", en: "Guided tour through the necropolis." }
-            },
-            {
-                time: "01:00 PM",
-                title: { es: "Retorno", en: "Return" },
-                desc: { es: "Llegada a la Plaza de Armas.", en: "Arrival at the Main Square." }
-            }
+            { time: "03:00 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Reunión en el punto de encuentro.", en: "Meeting at the gathering point." } },
+            { time: "03:30 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Inicio del tour.", en: "Start of the tour." } },
+            { time: "04:00 PM", title: { es: "Ventanillas de Otuzco", en: "Ventanillas de Otuzco" }, desc: { es: "Visita guiada a la necrópolis y puente colgante.", en: "Guided tour of the necropolis and suspension bridge." } },
+            { time: "05:00 PM", title: { es: "Feria y Jardín", en: "Fair and Garden" }, desc: { es: "Feria artesanal y Jardín de las Hortensias.", en: "Craft fair and Hydrangea Garden." } },
+            { time: "06:00 PM", title: { es: "Fábrica de Lácteos", en: "Dairy Factory" }, desc: { es: "Visita y degustación.", en: "Visit and tasting." } },
+            { time: "06:45 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
         ],
-        faq: [
-            {
-                q: { es: "¿Es difícil la caminata?", en: "Is the hike difficult?" },
-                a: { es: "No, es nivel básico.", en: "No, it is basic level." }
-            }
-        ]
+        faq: []
     },
     {
         id: "collpa",
@@ -270,10 +241,10 @@ export const tours = [
         ],
         rating: 4.8,
         reviews: 150,
-        price: { es: 95, en: 25 },
+        price: { es: 30, en: 9 }, // Updated price
         duration: {
-            es: "Medio Día",
-            en: "Half Day"
+            es: "03:30 PM - 07:00 PM",
+            en: "03:30 PM - 07:00 PM"
         },
         groupSize: { es: "Max 20 personas", en: "Max 20 people" },
         type: { es: "Tradicional", en: "Traditional" },
@@ -287,16 +258,22 @@ export const tours = [
             en: "Famous for the 'Call of the Cows', where cattle return by name. Enjoy fresh dairy delights."
         },
         fullDescription: {
-            es: "La ex hacienda La Collpa es un destino tradicional donde se puede observar el llamado de las vacas y degustar productos lácteos como el manjar blanco.",
-            en: "The former La Collpa hacienda is a traditional destination where you can observe the calling of the cows and taste dairy products like manjar blanco."
+            es: "La ex hacienda La Collpa es un destino tradicional imperdible. Vive la experiencia del llamado de las vacas y conoce la historia de esta emblemática hacienda.",
+            en: "The former La Collpa hacienda is a traditional destination not to be missed. Experience the calling of the cows and learn the history of this emblematic hacienda."
         },
         highlights: {
-            es: ["Llamado de vacas", "Capilla histórica", "Degustación de lácteos"],
-            en: ["Cow calling", "Historical chapel", "Dairy tasting"]
+            es: ["Capilla Virgen del Carmen", "Casa ex hacienda", "Llamado de vacas", "Laguna artificial", "Alfareros de Mollepampa"],
+            en: ["Virgin of Carmen Chapel", "Former Hacienda House", "Cow Calling", "Artificial Lagoon", "Mollepampa Potters"]
         },
         includes: { es: ["Transporte", "Guía", "Entrada"], en: ["Transport", "Guide", "Entrance"] },
         notIncluded: { es: ["Compras"], en: ["Shopping"] },
-        itinerary: [],
+        itinerary: [
+            { time: "03:00 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Preparación para la salida.", en: "Preparation for departure." } },
+            { time: "03:30 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Partida hacia La Collpa.", en: "Departure to La Collpa." } },
+            { time: "04:00 PM", title: { es: "La Collpa", en: "La Collpa" }, desc: { es: "Visita capilla, casa hacienda, laguna y llamado de vacas.", en: "Visit chapel, hacienda house, lagoon, and cow calling." } },
+            { time: "06:00 PM", title: { es: "Alfareros", en: "Potters" }, desc: { es: "Visita a los alfareros de Mollepampa.", en: "Visit to the Mollepampa potters." } },
+            { time: "07:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
+        ],
         faq: []
     },
     {
@@ -310,10 +287,10 @@ export const tours = [
         ],
         rating: 4.5,
         reviews: 45,
-        price: { es: 95, en: 25 },
+        price: { es: 40, en: 11 }, // Updated price
         duration: {
-            es: "Medio Día",
-            en: "Half Day"
+            es: "09:30 AM - 02:00 PM / 03:00 PM - 07:00 PM",
+            en: "09:30 AM - 02:00 PM / 03:00 PM - 07:00 PM"
         },
         groupSize: { es: "Max 15 personas", en: "Max 15 people" },
         type: { es: "Arqueología", en: "Archaeology" },
@@ -327,8 +304,8 @@ export const tours = [
             en: "Step back in time at these historical ruins offering panoramic countryside views."
         },
         fullDescription: {
-            es: "El Castillo de Yanamarca es una formación rocosa y sitio arqueológico que se asemeja a un castillo medieval (Cultura Caxamarca). Ofrece vistas espectaculares del valle.",
-            en: "Yanamarca Castle is a rock formation and archaeological site that resembles a medieval castle (Caxamarca Culture). It offers spectacular views of the valley."
+            es: "El Castillo de Yanamarca es una impresionante formación arqueológica. Disfruta de la flexibilidad de dos horarios de salida para explorar este misterioso lugar.",
+            en: "Yanamarca Castle is an impressive archaeological formation. Enjoy the flexibility of two departure times to explore this mysterious place."
         },
         highlights: {
             es: ["Vistas panorámicas", "Ruinas arqueológicas", "Formaciones rocosas"],
@@ -336,7 +313,12 @@ export const tours = [
         },
         includes: { es: ["Transporte", "Guía", "Entrada"], en: ["Transport", "Guide", "Entrance"] },
         notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
+        itinerary: [
+            { time: "09:00 AM / 02:30 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Reunión previa a la salida.", en: "Pre-departure meeting." } },
+            { time: "09:30 AM / 03:00 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a Yanamarca.", en: "Heading to Yanamarca." } },
+            { time: "10:30 AM / 04:00 PM", title: { es: "Castillo de Yanamarca", en: "Yanamarca Castle" }, desc: { es: "Recorrido por las ruinas y alrededores.", en: "Tour of the ruins and surroundings." } },
+            { time: "02:00 PM / 07:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada al centro de Cajamarca.", en: "Arrival in downtown Cajamarca." } }
+        ],
         faq: []
     },
     {
@@ -367,24 +349,22 @@ export const tours = [
             en: "Tour the colonial architectural gems and the most important historical sites of the city."
         },
         fullDescription: {
-            es: "Sumérgete en la historia de Cajamarca con nuestro City Tour. Visitaremos la histórica Plaza de Armas, el Cuarto del Rescate (el único vestigio inca en la ciudad), el Complejo Monumental Belén, y la colina de Santa Apolonia para una vista panorámica inigualable.",
-            en: "Immerse yourself in the history of Cajamarca with our City Tour. We will visit the historic Plaza de Armas, the Ransom Room (the only Inca vestige in the city), the Belén Monumental Complex, and Santa Apolonia Hill for an invalid panoramic view."
+            es: "Sumérgete en la historia de Cajamarca con nuestro City Tour. Visitaremos los puntos más emblemáticos de la ciudad, desde la arquitectura religiosa hasta la historia inca.",
+            en: "Immerse yourself in the history of Cajamarca with our City Tour. We will visit the city's most emblematic points, from religious architecture to Inca history."
         },
         highlights: {
-            es: ["Cuarto del Rescate", "Plaza de Armas", "Mirador Santa Apolonia", "Iglesias Coloniales"],
-            en: ["Ransom Room", "Main Square", "Santa Apolonia Viewpoint", "Colonial Churches"]
+            es: ["Catedral de Cajamarca", "Cuarto del Rescate", "Iglesia San Francisco", "Complejo Belén", "Museo Etnográfico", "Cerro Santa Apolonia"],
+            en: ["Cajamarca Cathedral", "Ransom Room", "San Francisco Church", "Belén Complex", "Ethnographic Museum", "Santa Apolonia Hill"]
         },
         includes: { es: ["Transporte", "Guía oficial", "Entradas"], en: ["Transport", "Official guide", "Entry tickets"] },
         notIncluded: { es: ["Almuerzo", "Propinas"], en: ["Lunch", "Tips"] },
         itinerary: [
-            { time: "09:00 AM", title: { es: "Inicio", en: "Start" }, desc: { es: "Reunión en la Plaza de Armas.", en: "Meeting at the Main Square." } },
-            { time: "09:30 AM", title: { es: "Cuarto del Rescate", en: "Ransom Room" }, desc: { es: "Visita al lugar histórico del Inca Atahualpa.", en: "Visit to the historical site of Inca Atahualpa." } },
-            { time: "10:30 AM", title: { es: "Iglesias", en: "Churches" }, desc: { es: "Recorrido por San Francisco y Belén.", en: "Tour of San Francisco and Belén." } },
-            { time: "12:00 PM", title: { es: "Santa Apolonia", en: "Santa Apolonia" }, desc: { es: "Subida al mirador.", en: "Climb to the viewpoint." } }
+            { time: "30 min antes", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Punto de reunión.", en: "Meeting point." } },
+            { time: "Inicio", title: { es: "Catedral e Iglesias", en: "Cathedral & Churches" }, desc: { es: "Visita a la Catedral y San Francisco.", en: "Visit to the Cathedral and San Francisco." } },
+            { time: "Intermedio", title: { es: "Historia Inca", en: "Inca History" }, desc: { es: "Cuarto del Rescate y Belén.", en: "Ransom Room and Belén." } },
+            { time: "Final", title: { es: "Santa Apolonia", en: "Santa Apolonia" }, desc: { es: "Museo y mirador.", en: "Museum and viewpoint." } }
         ],
-        faq: [
-            { q: { es: "¿Se camina mucho?", en: "Is there a lot of walking?" }, a: { es: "Es un recorrido a pie moderado.", en: "It is a moderate walking tour." } }
-        ]
+        faq: []
     },
     // PRIVATE TOURS
     {
@@ -434,17 +414,24 @@ export const tours = [
         rating: 4.9,
         reviews: 15,
         price: { es: 250, en: 68 },
-        duration: { es: "1 Día", en: "1 Day" },
+        duration: {
+            es: "08:00 AM - 02:00 PM / 03:00 PM - 07:00 PM",
+            en: "08:00 AM - 02:00 PM / 03:00 PM - 07:00 PM"
+        },
         groupSize: { es: "Max 5 personas", en: "Max 5 people" },
         type: { es: "Privado", en: "Private" },
         location: "Cajamarca, Perú",
         title: { es: "Lagunas del Alto Perú", en: "Alto Peru Lagoons" },
         description: { es: "Un conjunto de lagunas de alto andinas de belleza incomparable.", en: "A set of high Andean lagoons of incomparable beauty." },
-        fullDescription: { es: "Visita las Lagunas del Alto Perú, un ecosistema vital y hermoso en las alturas de Cajamarca.", en: "Visit the Alto Peru Lagoons, a vital and beautiful ecosystem in the heights of Cajamarca." },
+        fullDescription: { es: "Visita las Lagunas del Alto Perú, un ecosistema vital y hermoso en las alturas de Cajamarca. Elige entre nuestros horarios de mañana o tarde.", en: "Visit the Alto Peru Lagoons, a vital and beautiful ecosystem in the heights of Cajamarca. Choose between our morning or afternoon schedules." },
         highlights: { es: ["Lagunas", "Observación de aves", "Paisaje andino"], en: ["Lagoons", "Bird watching", "Andean landscape"] },
         includes: { es: ["Transporte privado", "Guía", "Entradas"], en: ["Private transport", "Guide", "Tickets"] },
         notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
+        itinerary: [
+            { time: "07:30 AM / 02:30 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Reunión previa.", en: "Pre-meeting." } },
+            { time: "08:00 AM / 03:00 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Inicio del tour.", en: "Tour start." } },
+            { time: "02:00 PM / 07:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Fin del servicio.", en: "End of service." } }
+        ],
         faq: []
     },
     {
@@ -474,17 +461,28 @@ export const tours = [
         rating: 4.8,
         reviews: 22,
         price: { es: 250, en: 68 },
-        duration: { es: "Medio Día", en: "Half Day" },
+        duration: {
+            es: "08:00 AM - 01:00 PM / 02:30 PM - 06:30 PM",
+            en: "08:00 AM - 01:00 PM / 02:30 PM - 06:30 PM"
+        },
         groupSize: { es: "Max 5 personas", en: "Max 5 people" },
         type: { es: "Privado", en: "Private" },
         location: "Polloc, Cajamarca",
         title: { es: "Santuario de Polloc", en: "Polloc Sanctuary" },
         description: { es: "Visita la hermosa iglesia y santuario de Polloc, una joya arquitectónica.", en: "Visit the beautiful church and sanctuary of Polloc, an architectural jewel." },
-        fullDescription: { es: "El Santuario de la Virgen del Rosario en Polloc es una maravilla de arte religioso moderno.", en: "The Sanctuary of the Virgin of the Rosary in Polloc is a marvel of modern religious art." },
-        highlights: { es: ["Iglesia", "Arte religioso", "Jardines"], en: ["Church", "Religious art", "Gardens"] },
+        fullDescription: { es: "El Santuario de la Virgen del Rosario en Polloc es una maravilla de arte religioso moderno. Descubre sus mosaicos y ebanistería.", en: "The Sanctuary of the Virgin of the Rosary in Polloc is a marvel of modern religious art. Discover its mosaics and cabinetmaking." },
+        highlights: {
+            es: ["Pampa de la Culebra", "Basílica de la Virgen del Rosario", "Mosaicos", "Talleres de Ebanistería"],
+            en: ["Pampa de la Culebra", "Virgin of the Rosary Basilica", "Mosaics", "Cabinetmaking Workshops"]
+        },
         includes: { es: ["Transporte privado", "Guía", "Entradas"], en: ["Private transport", "Guide", "Tickets"] },
         notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
+        itinerary: [
+            { time: "07:30 AM / 02:00 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Preparación para la salida.", en: "Preparation for departure." } },
+            { time: "08:00 AM / 02:30 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Inicio del viaje.", en: "Start of trip." } },
+            { time: "09:00 AM / 03:30 PM", title: { es: "Polloc", en: "Polloc" }, desc: { es: "Recorrido por la basílica y talleres.", en: "Tour of the basilica and workshops." } },
+            { time: "01:00 PM / 06:30 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
+        ],
         faq: []
     },
     {
@@ -494,17 +492,28 @@ export const tours = [
         rating: 4.5,
         reviews: 18,
         price: { es: 250, en: 68 },
-        duration: { es: "Medio Día", en: "Half Day" },
+        duration: {
+            es: "09:30 AM - 02:00 PM / 03:00 PM - 07:00 PM",
+            en: "09:30 AM - 02:00 PM / 03:00 PM - 07:00 PM"
+        },
         groupSize: { es: "Max 5 personas", en: "Max 5 people" },
         type: { es: "Privado", en: "Private" },
         location: "Cajamarca, Perú",
         title: { es: "Estatuas Gigantes", en: "Giant Statues" },
         description: { es: "Parque temático con enormes esculturas que representan la cultura local.", en: "Theme park with huge sculptures representing local culture." },
-        fullDescription: { es: "Diviértete y toma fotos increíbles con las estatuas gigantes de Cajamarca.", en: "Have fun and take incredible photos with the giant statues of Cajamarca." },
-        highlights: { es: ["Esculturas gigantes", "Diversión", "Fotos"], en: ["Giant sculptures", "Fun", "Photos"] },
+        fullDescription: { es: "Diviértete con las impresionantes estatuas gigantes y vive la aventura en el Hotel Subterráneo y los juegos extremos.", en: "Have fun with the impressive giant statues and experience the adventure in the Underground Hotel and extreme games." },
+        highlights: {
+            es: ["Estatuas gigantes", "Hotel subterráneo", "Juegos extremos"],
+            en: ["Giant Statues", "Underground Hotel", "Extreme Games"]
+        },
         includes: { es: ["Transporte privado", "Guía", "Entradas"], en: ["Private transport", "Guide", "Tickets"] },
         notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
+        itinerary: [
+            { time: "09:00 AM / 02:30 PM", title: { es: "Embarque", en: "Boarding" }, desc: { es: "Punto de encuentro.", en: "Meeting point." } },
+            { time: "09:30 AM / 03:00 PM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a las Estatuas.", en: "Heading to the Statues." } },
+            { time: "10:30 AM / 04:00 PM", title: { es: "Parque Temático", en: "Theme Park" }, desc: { es: "Recorrido por las atracciones.", en: "Tour of the attractions." } },
+            { time: "02:00 PM / 07:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Vuelta a la ciudad.", en: "Back to the city." } }
+        ],
         faq: []
     },
     {
