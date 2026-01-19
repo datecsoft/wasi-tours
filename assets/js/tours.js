@@ -1,79 +1,100 @@
 export const tours = [
     {
-        id: "otuzco",
+        id: "namora",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuB695eg1qgbXIHDZtDYIGQHJq-8IYiwuwyNIsiuiyvoG39vlpxXpD5JQZCzP3BRCMgVwt3B2l1fKYJJPw87niD22G5SGT0OVUpvfsvi58hhe2WlAwbbpa1aeO9i_ngVcwjmA2w_INNiaBg3fM5ypuq28KN2kh3t-re3nWJv5moc6ft7jrlZDAB84vaWy4lYCGdiR4VfQzy78VCWbxN2Cv4WgRlH2tv1nt_5l1AcUs_Moq0xqmrfK_Aus8BsXOVO3U2579f1_4auUA16",
-            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ventanas_de_Otuzco.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/e/e9/Ventanillas_de_Otuzco%2C_Peru.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/3/3b/Las_Ventanillas_de_Otuzco.jpg"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWEVPF_D5-SKSLaT_NwuVJxxEGQ3ny45mqR-RR1dI9zS31ls46DP0RGiOaZVIjZJSNmZShDrlYqlwy3fPoYlxUHNCKdC2jkB7yevc-Zo4thoeD8Bce0Dp-Qe5bBTfWRQYo2d9qyjioMcp4A_7-_U7Z974u9grfXcBIqMqC7EoAzuyn4DRRoQ6hXhLnoQbH6_5Lihcl-414wQZ0XjpC0So24rPMWIUFcyYfaVyvteYSRQLtPOrAzT5NoAP1sLCLISFtq2s1n9Z-IH",
+            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/b/b3/Laguna_San_Nicol%C3%A1s_-_panoramio_%282%29.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg"
         ],
-        rating: 4.8,
-        reviews: 124,
-        price: { es: 130, en: 35 },
+        rating: 4.6,
+        reviews: 60,
+        price: { es: 110, en: 30 },
         duration: {
             es: "Medio Día",
             en: "Half Day"
         },
-        groupSize: {
-            es: "Max 15 personas",
-            en: "Max 15 people"
-        },
-        type: {
-            es: "Arqueología",
-            en: "Archaeology"
-        },
-        location: "Baños del Inca, Cajamarca",
+        groupSize: { es: "Max 12 personas", en: "Max 12 people" },
+        type: { es: "Relax", en: "Relax" },
+        location: "Namora, Cajamarca",
         title: {
-            es: "Ventanillas de Otuzco",
-            en: "Ventanillas de Otuzco"
+            es: "Namora",
+            en: "Namora"
         },
         description: {
-            es: "Explora la misteriosa necrópolis pre-inca tallada directamente en acantilados de piedra volcánica.",
-            en: "Explore the mysterious pre-Inca necropolis carved directly into volcanic stone cliffs."
+            es: "Visita la tierra de las guitarras y disfruta de un tranquilo paseo en bote en la laguna San Nicolás.",
+            en: "Visit the land of guitars and enjoy a peaceful boat ride on San Nicolas lagoon."
         },
         fullDescription: {
-            es: "Las Ventanillas de Otuzco son un sitio arqueológico peruano situado en el distrito de Baños del Inca a 8 km al noroeste de la ciudad de Cajamarca. El sitio es una necrópolis de origen preincaico, anterior a la cultura Cajamarca, excavada en la roca volcánica. Exploraremos las criptas y disfrutaremos del paisaje únicos.",
-            en: "The Ventanillas de Otuzco is a Peruvian archaeological site located in the district of Baños del Inca, 8 km northwest of the city of Cajamarca. The site is a pre-Inca necropolis carved into volcanic rock. We will explore the crypts and enjoy the unique landscape."
+            es: "Namora es conocido por sus talleres de guitarras y la hermosa Laguna San Nicolás. Disfrutaremos de los paisajes, la artesanía y la gastronomía local.",
+            en: "Namora is known for its guitar workshops and the beautiful San Nicolás Lagoon. We will enjoy the landscapes, crafts, and local cuisine."
         },
         highlights: {
-            es: ["Necrópolis pre-inca", "Vistas panorámicas", "Caminata ligera"],
-            en: ["Pre-Inca necropolis", "Panoramic views", "Light hiking"]
+            es: ["Laguna San Nicolás", "Taller de guitarras", "Paseo en bote"],
+            en: ["San Nicolás Lagoon", "Guitar workshops", "Boat ride"]
+        },
+        includes: { es: ["Transporte", "Guía", "Paseo en bote"], en: ["Transport", "Guide", "Boat ride"] },
+        notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
+        itinerary: [],
+        faq: []
+    },
+    {
+        id: "porcon",
+        images: [
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuCj5KQTti6ZgLfCgCgvn-zWCFgHxKREMNnVaznlFYR0yANqraCD97xuGt7_w3Aa_IiAy1grGKOaAs6hsVybv9iDEuFVeCg-qO-29Fimeo2L-wJpOSJ3SD7y1-WNMbZPKQQIgVtalSEKV3FttM0FzYvI5urGG5SSHUrjZYp_3f87hto74XMNi5LlRKUc_F2BynKi-dbhBNyXFeW2G_MBiPqPi8809SI5wx2dznm1pHRdBSYXdZYIhtkUZVQQMLtrwvBZF7ulyy_M-weW",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/7/77/Granja_Porc%C3%B3n_-_View.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg"
+        ],
+        rating: 4.7,
+        reviews: 95,
+        price: { es: 150, en: 40 },
+        duration: {
+            es: "Día Completo",
+            en: "Full Day"
+        },
+        groupSize: {
+            es: "Max 20 personas",
+            en: "Max 20 people"
+        },
+        type: {
+            es: "Agroturismo",
+            en: "Agrotourism"
+        },
+        location: "Granja Porcón, Cajamarca",
+        title: {
+            es: "Granja Porcón",
+            en: "Porcon Farm"
+        },
+        description: {
+            es: "Sumérgete en la vida tradicional de granja rodeado de inmensos bosques de pinos y vida silvestre.",
+            en: "Immerse yourself in traditional farm life surrounded by immense pine forests and wildlife."
+        },
+        fullDescription: {
+            es: "La Granja Porcón es un ejemplo exitoso de cooperativa agraria en el Perú. Rodeada de bosques de pinos, ofrece turismo rural, zoológico con osos de anteojos, pumas, y actividades de campo como ordeño de vacas.",
+            en: "Granja Porcón is a successful example of an agrarian cooperative in Peru. Surrounded by pine forests, it offers rural tourism, a zoo with spectacled bears, pumas, and field activities such as cow milking."
+        },
+        highlights: {
+            es: ["Turismo vivencial", "Bosques de pinos", "Zoológico"],
+            en: ["Experiential tourism", "Pine forests", "Zoo"]
         },
         includes: {
-            es: ["Transporte turístico", "Guía oficial", "Entradas"],
-            en: ["Tourist transport", "Official guide", "Entrance fees"]
+            es: ["Transporte", "Guía", "Entrada a Granja Porcón"],
+            en: ["Transport", "Guide", "Granja Porcón Entrance"]
         },
         notIncluded: {
-            es: ["Almuerzo", "Propinas"],
-            en: ["Lunch", "Tips"]
+            es: ["Almuerzo"],
+            en: ["Lunch"]
         },
         itinerary: [
-            {
-                time: "09:00 AM",
-                title: { es: "Recojo del Hotel", en: "Hotel Pickup" },
-                desc: { es: "Inicio del tour desde su hotel.", en: "Start of the tour from your hotel." }
-            },
-            {
-                time: "09:30 AM",
-                title: { es: "Jardín de las Hortensias", en: "Hydrangea Garden" },
-                desc: { es: "Breve parada para apreciar flores locales.", en: "Brief stop to appreciate local flowers." }
-            },
-            {
-                time: "10:30 AM",
-                title: { es: "Ventanillas de Otuzco", en: "Ventanillas de Otuzco" },
-                desc: { es: "Visita guiada por la necrópolis.", en: "Guided tour through the necropolis." }
-            },
-            {
-                time: "01:00 PM",
-                title: { es: "Retorno", en: "Return" },
-                desc: { es: "Llegada a la Plaza de Armas.", en: "Arrival at the Main Square." }
-            }
+            { time: "09:00 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a Porcón.", en: "Heading to Porcon." } },
+            { time: "10:30 AM", title: { es: "Talleres Artesanales", en: "Artisan Workshops" }, desc: { es: "Visita a talleres de picapedreros.", en: "Visit to stone cutters workshops." } },
+            { time: "11:30 AM", title: { es: "Granja Porcón", en: "Porcon Farm" }, desc: { es: "Recorrido por el zoológico y bosque.", en: "Tour of the zoo and forest." } },
+            { time: "02:00 PM", title: { es: "Almuerzo libre", en: "Free lunch" }, desc: { es: "Tiempo para comer (no incluido).", en: "Time to eat (not included)." } },
+            { time: "04:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
         ],
         faq: [
-            {
-                q: { es: "¿Es difícil la caminata?", en: "Is the hike difficult?" },
-                a: { es: "No, es nivel básico.", en: "No, it is basic level." }
-            }
+            { q: { es: "¿Hay restaurantes dentro?", en: "Are there restaurants inside?" }, a: { es: "Sí, hay varias opciones típicas.", en: "Yes, there are several typical options." } }
         ]
     },
     {
@@ -158,102 +179,81 @@ export const tours = [
         ]
     },
     {
-        id: "porcon",
+        id: "otuzco",
         images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuCj5KQTti6ZgLfCgCgvn-zWCFgHxKREMNnVaznlFYR0yANqraCD97xuGt7_w3Aa_IiAy1grGKOaAs6hsVybv9iDEuFVeCg-qO-29Fimeo2L-wJpOSJ3SD7y1-WNMbZPKQQIgVtalSEKV3FttM0FzYvI5urGG5SSHUrjZYp_3f87hto74XMNi5LlRKUc_F2BynKi-dbhBNyXFeW2G_MBiPqPi8809SI5wx2dznm1pHRdBSYXdZYIhtkUZVQQMLtrwvBZF7ulyy_M-weW",
-            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/7/77/Granja_Porc%C3%B3n_-_View.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Granja_Porc%C3%B3n_-_View_with_vicu%C3%B1as.jpg"
+            "https://lh3.googleusercontent.com/aida-public/AB6AXuB695eg1qgbXIHDZtDYIGQHJq-8IYiwuwyNIsiuiyvoG39vlpxXpD5JQZCzP3BRCMgVwt3B2l1fKYJJPw87niD22G5SGT0OVUpvfsvi58hhe2WlAwbbpa1aeO9i_ngVcwjmA2w_INNiaBg3fM5ypuq28KN2kh3t-re3nWJv5moc6ft7jrlZDAB84vaWy4lYCGdiR4VfQzy78VCWbxN2Cv4WgRlH2tv1nt_5l1AcUs_Moq0xqmrfK_Aus8BsXOVO3U2579f1_4auUA16",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Ventanas_de_Otuzco.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e9/Ventanillas_de_Otuzco%2C_Peru.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/3/3b/Las_Ventanillas_de_Otuzco.jpg"
         ],
-        rating: 4.7,
-        reviews: 95,
-        price: { es: 150, en: 40 },
-        duration: {
-            es: "Día Completo",
-            en: "Full Day"
-        },
-        groupSize: {
-            es: "Max 20 personas",
-            en: "Max 20 people"
-        },
-        type: {
-            es: "Agroturismo",
-            en: "Agrotourism"
-        },
-        location: "Granja Porcón, Cajamarca",
-        title: {
-            es: "Granja Porcón",
-            en: "Porcon Farm"
-        },
-        description: {
-            es: "Sumérgete en la vida tradicional de granja rodeado de inmensos bosques de pinos y vida silvestre.",
-            en: "Immerse yourself in traditional farm life surrounded by immense pine forests and wildlife."
-        },
-        fullDescription: {
-            es: "La Granja Porcón es un ejemplo exitoso de cooperativa agraria en el Perú. Rodeada de bosques de pinos, ofrece turismo rural, zoológico con osos de anteojos, pumas, y actividades de campo como ordeño de vacas.",
-            en: "Granja Porcón is a successful example of an agrarian cooperative in Peru. Surrounded by pine forests, it offers rural tourism, a zoo with spectacled bears, pumas, and field activities such as cow milking."
-        },
-        highlights: {
-            es: ["Turismo vivencial", "Bosques de pinos", "Zoológico"],
-            en: ["Experiential tourism", "Pine forests", "Zoo"]
-        },
-        includes: {
-            es: ["Transporte", "Guía", "Entrada a Granja Porcón"],
-            en: ["Transport", "Guide", "Granja Porcón Entrance"]
-        },
-        notIncluded: {
-            es: ["Almuerzo"],
-            en: ["Lunch"]
-        },
-        itinerary: [
-            { time: "09:00 AM", title: { es: "Salida", en: "Departure" }, desc: { es: "Rumbo a Porcón.", en: "Heading to Porcon." } },
-            { time: "10:30 AM", title: { es: "Talleres Artesanales", en: "Artisan Workshops" }, desc: { es: "Visita a talleres de picapedreros.", en: "Visit to stone cutters workshops." } },
-            { time: "11:30 AM", title: { es: "Granja Porcón", en: "Porcon Farm" }, desc: { es: "Recorrido por el zoológico y bosque.", en: "Tour of the zoo and forest." } },
-            { time: "02:00 PM", title: { es: "Almuerzo libre", en: "Free lunch" }, desc: { es: "Tiempo para comer (no incluido).", en: "Time to eat (not included)." } },
-            { time: "04:00 PM", title: { es: "Retorno", en: "Return" }, desc: { es: "Llegada a Cajamarca.", en: "Arrival in Cajamarca." } }
-        ],
-        faq: [
-            { q: { es: "¿Hay restaurantes dentro?", en: "Are there restaurants inside?" }, a: { es: "Sí, hay varias opciones típicas.", en: "Yes, there are several typical options." } }
-        ]
-    },
-    {
-        id: "namora",
-        images: [
-            "https://lh3.googleusercontent.com/aida-public/AB6AXuC-BWEVPF_D5-SKSLaT_NwuVJxxEGQ3ny45mqR-RR1dI9zS31ls46DP0RGiOaZVIjZJSNmZShDrlYqlwy3fPoYlxUHNCKdC2jkB7yevc-Zo4thoeD8Bce0Dp-Qe5bBTfWRQYo2d9qyjioMcp4A_7-_U7Z974u9grfXcBIqMqC7EoAzuyn4DRRoQ6hXhLnoQbH6_5Lihcl-414wQZ0XjpC0So24rPMWIUFcyYfaVyvteYSRQLtPOrAzT5NoAP1sLCLISFtq2s1n9Z-IH",
-            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/b/b3/Laguna_San_Nicol%C3%A1s_-_panoramio_%282%29.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/e/ea/Laguna_San_Nicol%C3%A1s_-_panoramio.jpg"
-        ],
-        rating: 4.6,
-        reviews: 60,
-        price: { es: 110, en: 30 },
+        rating: 4.8,
+        reviews: 124,
+        price: { es: 130, en: 35 },
         duration: {
             es: "Medio Día",
             en: "Half Day"
         },
-        groupSize: { es: "Max 12 personas", en: "Max 12 people" },
-        type: { es: "Relax", en: "Relax" },
-        location: "Namora, Cajamarca",
+        groupSize: {
+            es: "Max 15 personas",
+            en: "Max 15 people"
+        },
+        type: {
+            es: "Arqueología",
+            en: "Archaeology"
+        },
+        location: "Baños del Inca, Cajamarca",
         title: {
-            es: "Namora",
-            en: "Namora"
+            es: "Ventanillas de Otuzco",
+            en: "Ventanillas de Otuzco"
         },
         description: {
-            es: "Visita la tierra de las guitarras y disfruta de un tranquilo paseo en bote en la laguna San Nicolás.",
-            en: "Visit the land of guitars and enjoy a peaceful boat ride on San Nicolas lagoon."
+            es: "Explora la misteriosa necrópolis pre-inca tallada directamente en acantilados de piedra volcánica.",
+            en: "Explore the mysterious pre-Inca necropolis carved directly into volcanic stone cliffs."
         },
         fullDescription: {
-            es: "Namora es conocido por sus talleres de guitarras y la hermosa Laguna San Nicolás. Disfrutaremos de los paisajes, la artesanía y la gastronomía local.",
-            en: "Namora is known for its guitar workshops and the beautiful San Nicolás Lagoon. We will enjoy the landscapes, crafts, and local cuisine."
+            es: "Las Ventanillas de Otuzco son un sitio arqueológico peruano situado en el distrito de Baños del Inca a 8 km al noroeste de la ciudad de Cajamarca. El sitio es una necrópolis de origen preincaico, anterior a la cultura Cajamarca, excavada en la roca volcánica. Exploraremos las criptas y disfrutaremos del paisaje únicos.",
+            en: "The Ventanillas de Otuzco is a Peruvian archaeological site located in the district of Baños del Inca, 8 km northwest of the city of Cajamarca. The site is a pre-Inca necropolis carved into volcanic rock. We will explore the crypts and enjoy the unique landscape."
         },
         highlights: {
-            es: ["Laguna San Nicolás", "Taller de guitarras", "Paseo en bote"],
-            en: ["San Nicolás Lagoon", "Guitar workshops", "Boat ride"]
+            es: ["Necrópolis pre-inca", "Vistas panorámicas", "Caminata ligera"],
+            en: ["Pre-Inca necropolis", "Panoramic views", "Light hiking"]
         },
-        includes: { es: ["Transporte", "Guía", "Paseo en bote"], en: ["Transport", "Guide", "Boat ride"] },
-        notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
-        itinerary: [],
-        faq: []
+        includes: {
+            es: ["Transporte turístico", "Guía oficial", "Entradas"],
+            en: ["Tourist transport", "Official guide", "Entrance fees"]
+        },
+        notIncluded: {
+            es: ["Almuerzo", "Propinas"],
+            en: ["Lunch", "Tips"]
+        },
+        itinerary: [
+            {
+                time: "09:00 AM",
+                title: { es: "Recojo del Hotel", en: "Hotel Pickup" },
+                desc: { es: "Inicio del tour desde su hotel.", en: "Start of the tour from your hotel." }
+            },
+            {
+                time: "09:30 AM",
+                title: { es: "Jardín de las Hortensias", en: "Hydrangea Garden" },
+                desc: { es: "Breve parada para apreciar flores locales.", en: "Brief stop to appreciate local flowers." }
+            },
+            {
+                time: "10:30 AM",
+                title: { es: "Ventanillas de Otuzco", en: "Ventanillas de Otuzco" },
+                desc: { es: "Visita guiada por la necrópolis.", en: "Guided tour through the necropolis." }
+            },
+            {
+                time: "01:00 PM",
+                title: { es: "Retorno", en: "Return" },
+                desc: { es: "Llegada a la Plaza de Armas.", en: "Arrival at the Main Square." }
+            }
+        ],
+        faq: [
+            {
+                q: { es: "¿Es difícil la caminata?", en: "Is the hike difficult?" },
+                a: { es: "No, es nivel básico.", en: "No, it is basic level." }
+            }
+        ]
     },
     {
         id: "collpa",
