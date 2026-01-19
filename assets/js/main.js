@@ -120,7 +120,19 @@ function renderFeaturedTours() {
         return tourCat === currentCategory;
     });
 
-    container.innerHTML = filteredTours.map(tour => `
+    container.innerHTML = filteredTours.map(tour => {
+        let priceDisplay;
+        if (tour.category === 'private') {
+            if (currentLang === 'es') {
+                priceDisplay = `S/ ${tour.price.es} <span class="text-xs text-gray-400 font-normal">/ 5 personas</span>`;
+            } else {
+                priceDisplay = `$${tour.price.en} <span class="text-xs text-gray-400 font-normal">/ 5 people</span>`;
+            }
+        } else {
+            priceDisplay = `${currentLang === 'es' ? 'S/ ' + tour.price.es : '$' + tour.price.en} <span class="text-xs text-gray-400 font-normal" data-i18n="card.perPerson">${translations[currentLang]["card.perPerson"]}</span>`;
+        }
+
+        return `
         <div class="group flex flex-col gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 animate-fadeIn">
             <div class="w-full aspect-video rounded-xl bg-gray-200 overflow-hidden relative">
                 <div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" 
@@ -143,14 +155,14 @@ function renderFeaturedTours() {
                     ${tour.description[currentLang]}
                 </p>
                 <div class="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-between items-center">
-                    <span class="text-primary font-bold text-lg">${currentLang === 'es' ? 'S/ ' + tour.price.es : '$' + tour.price.en} <span class="text-xs text-gray-400 font-normal" data-i18n="card.perPerson">${translations[currentLang]["card.perPerson"]}</span></span>
+                    <span class="text-primary font-bold text-lg">${priceDisplay}</span>
                     <a href="detail.html#${tour.id}" class="text-sm font-bold text-[#111418] dark:text-white hover:text-secondary" data-i18n="card.details">
                         ${translations[currentLang]["card.details"]}
                     </a>
                 </div>
             </div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 // Detail Page Logic
@@ -188,10 +200,24 @@ function renderTourDetail(tour) {
     setText('tour-reviews-count-large', `${currentLang === 'es' ? 'Basado en' : 'Based on'} ${tour.reviews} ${currentLang === 'es' ? 'opiniones' : 'reviews'}`);
 
     // Price
-    const price = currentLang === 'es' ? `S/ ${tour.price.es}` : `$${tour.price.en}`;
+    // Price
+    let price;
+    let oldPrice;
+
+    if (tour.category === 'private') {
+        if (currentLang === 'es') {
+            price = `S/ ${tour.price.es} / 5 personas`;
+            oldPrice = `S/ ${Math.round(tour.price.es * 1.2)} / 5 personas`;
+        } else {
+            price = `$${tour.price.en} / 5 people`;
+            oldPrice = `$${Math.round(tour.price.en * 1.2)} / 5 people`;
+        }
+    } else {
+        price = `${currentLang === 'es' ? 'S/ ' + tour.price.es : '$' + tour.price.en}`;
+        oldPrice = `${currentLang === 'es' ? 'S/ ' + Math.round(tour.price.es * 1.2) : '$' + Math.round(tour.price.en * 1.2)}`;
+    }
+
     setText('tour-price', price);
-    // Fake old price for effect (generic logic + 20%)
-    const oldPrice = currentLang === 'es' ? `S/ ${Math.round(tour.price.es * 1.2)}` : `$${Math.round(tour.price.en * 1.2)}`;
     setText('tour-price-old', oldPrice);
 
     // Stats
