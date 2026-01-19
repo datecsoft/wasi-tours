@@ -134,14 +134,14 @@ function renderFeaturedTours() {
 
         return `
         <div class="group flex flex-col gap-4 bg-surface-light dark:bg-surface-dark p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-800 animate-fadeIn">
-            <div class="w-full aspect-video rounded-xl bg-gray-200 overflow-hidden relative">
+            <a href="detail.html#${tour.id}" class="w-full aspect-video rounded-xl bg-gray-200 overflow-hidden relative block">
                 <div class="w-full h-full bg-cover bg-center group-hover:scale-110 transition-transform duration-500" 
                      style="background-image: url('${tour.images[0]}');"></div>
                 ${tour.duration ? `
                 <div class="absolute top-3 right-3 bg-secondary/90 backdrop-blur-sm px-2 py-1 rounded-md text-xs font-bold shadow-sm text-white">
                     ${tour.duration[currentLang]}
                 </div>` : ''}
-            </div>
+            </a>
             <div>
                 <div class="flex justify-between items-start">
                     <h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">
