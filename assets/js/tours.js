@@ -6,7 +6,8 @@ export const tours = [
             "assets/images/tours/namora/01.jpg",
             "assets/images/tours/namora/02.jpg",
             "assets/images/tours/namora/03.jpg",
-            "assets/images/tours/namora/04.jpg"
+            "assets/images/tours/namora/04.jpg",
+            "assets/images/tours/namora/05.jpg"
         ],
         rating: 4.6,
         reviews: 60,
@@ -54,7 +55,8 @@ export const tours = [
             "assets/images/tours/porcon/01.jpg",
             "assets/images/tours/porcon/02.jpg",
             "assets/images/tours/porcon/03.jpg",
-            "assets/images/tours/porcon/04.jpg"
+            "assets/images/tours/porcon/04.jpg",
+            "assets/images/tours/porcon/05.jpg"
         ],
         rating: 4.7,
         reviews: 95,
@@ -115,7 +117,8 @@ export const tours = [
             "assets/images/tours/cumbemayo/01.jpg",
             "assets/images/tours/cumbemayo/02.jpg",
             "assets/images/tours/cumbemayo/03.jpg",
-            "assets/images/tours/cumbemayo/04.jpg"
+            "assets/images/tours/cumbemayo/04.jpg",
+            "assets/images/tours/cumbemayo/05.jpg"
         ],
         rating: 4.8,
         reviews: 124,
@@ -178,7 +181,8 @@ export const tours = [
             "assets/images/tours/otuzco/01.jpg",
             "assets/images/tours/otuzco/02.jpg",
             "assets/images/tours/otuzco/03.jpg",
-            "assets/images/tours/otuzco/04.jpg"
+            "assets/images/tours/otuzco/04.jpg",
+            "assets/images/tours/otuzco/05.jpg"
         ],
         rating: 4.8,
         reviews: 124,
@@ -237,7 +241,8 @@ export const tours = [
             "assets/images/tours/collpa/01.jpg",
             "assets/images/tours/collpa/02.jpg",
             "assets/images/tours/collpa/03.jpg",
-            "assets/images/tours/collpa/04.jpg"
+            "assets/images/tours/collpa/04.jpg",
+            "assets/images/tours/collpa/05.jpg"
         ],
         rating: 4.8,
         reviews: 150,
@@ -283,7 +288,8 @@ export const tours = [
             "assets/images/tours/yanamarca/01.jpg",
             "assets/images/tours/yanamarca/02.jpg",
             "assets/images/tours/yanamarca/03.jpg",
-            "assets/images/tours/yanamarca/04.jpg"
+            "assets/images/tours/yanamarca/04.jpg",
+            "assets/images/tours/yanamarca/05.jpg"
         ],
         rating: 4.5,
         reviews: 45,
@@ -328,7 +334,8 @@ export const tours = [
             "assets/images/tours/city-tour/01.jpg",
             "assets/images/tours/city-tour/02.jpg",
             "assets/images/tours/city-tour/03.jpg",
-            "assets/images/tours/city-tour/04.jpg"
+            "assets/images/tours/city-tour/04.jpg",
+            "assets/images/tours/city-tour/05.jpg"
         ],
         rating: 4.9,
         reviews: 210,
@@ -370,7 +377,13 @@ export const tours = [
     {
         id: "velo-novia",
         category: "private",
-        images: ["assets/images/tours/velo-novia/01.jpg"],
+        images: [
+            "assets/images/tours/velo-novia/01.jpg",
+            "assets/images/tours/velo-novia/02.jpg",
+            "assets/images/tours/velo-novia/03.jpg",
+            "assets/images/tours/velo-novia/04.jpg",
+            "assets/images/tours/velo-novia/05.jpg"
+        ],
         rating: 4.8,
         reviews: 12,
         price: { es: 250, en: 68 },
@@ -390,7 +403,13 @@ export const tours = [
     {
         id: "cochecoral",
         category: "private",
-        images: ["assets/images/tours/cochecoral/01.jpg"],
+        images: [
+            "assets/images/tours/cochecoral/01.jpg",
+            "assets/images/tours/cochecoral/02.jpg",
+            "assets/images/tours/cochecoral/03.jpg",
+            "assets/images/tours/cochecoral/04.jpg",
+            "assets/images/tours/cochecoral/05.jpg"
+        ],
         rating: 4.7,
         reviews: 8,
         price: { es: 250, en: 68 },
@@ -410,7 +429,13 @@ export const tours = [
     {
         id: "alto-peru",
         category: "private",
-        images: ["assets/images/tours/alto-peru/01.jpg"],
+        images: [
+            "assets/images/tours/alto-peru/01.jpg",
+            "assets/images/tours/alto-peru/02.jpg",
+            "assets/images/tours/alto-peru/03.jpg",
+            "assets/images/tours/alto-peru/04.jpg",
+            "assets/images/tours/alto-peru/05.jpg"
+        ],
         rating: 4.9,
         reviews: 15,
         price: { es: 250, en: 68 },
@@ -437,7 +462,13 @@ export const tours = [
     {
         id: "banos-inca",
         category: "private",
-        images: ["assets/images/tours/banos-inca/01.jpg"],
+        images: [
+            "assets/images/tours/banos-inca/01.jpg",
+            "assets/images/tours/banos-inca/02.jpg",
+            "assets/images/tours/banos-inca/03.jpg",
+            "assets/images/tours/banos-inca/04.jpg",
+            "assets/images/tours/banos-inca/05.jpg"
+        ],
         rating: 4.6,
         reviews: 40,
         price: { es: 250, en: 68 },
@@ -457,7 +488,13 @@ export const tours = [
     {
         id: "polloc",
         category: "private",
-        images: ["assets/images/tours/polloc/01.jpg"],
+        images: [
+            "assets/images/tours/polloc/01.jpg",
+            "assets/images/tours/polloc/02.jpg",
+            "assets/images/tours/polloc/03.jpg",
+            "assets/images/tours/polloc/04.jpg",
+            "assets/images/tours/polloc/05.jpg"
+        ],
         rating: 4.8,
         reviews: 22,
         price: { es: 250, en: 68 },
@@ -488,7 +525,13 @@ export const tours = [
     {
         id: "estatuas-gigantes",
         category: "private",
-        images: ["assets/images/tours/estatuas-gigantes/01.jpg"],
+        images: [
+            "assets/images/tours/estatuas-gigantes/01.jpg",
+            "assets/images/tours/estatuas-gigantes/02.jpg",
+            "assets/images/tours/estatuas-gigantes/03.jpg",
+            "assets/images/tours/estatuas-gigantes/04.jpg",
+            "assets/images/tours/estatuas-gigantes/05.jpg"
+        ],
         rating: 4.5,
         reviews: 18,
         price: { es: 250, en: 68 },
@@ -519,7 +562,13 @@ export const tours = [
     {
         id: "sexemayo",
         category: "private",
-        images: ["assets/images/tours/sexemayo/01.jpg"],
+        images: [
+            "assets/images/tours/sexemayo/01.jpg",
+            "assets/images/tours/sexemayo/02.jpg",
+            "assets/images/tours/sexemayo/03.jpg",
+            "assets/images/tours/sexemayo/04.jpg",
+            "assets/images/tours/sexemayo/05.jpg"
+        ],
         rating: 4.6,
         reviews: 10,
         price: { es: 250, en: 68 },
@@ -539,7 +588,13 @@ export const tours = [
     {
         id: "yumagual",
         category: "private",
-        images: ["assets/images/tours/yumagual/01.jpg"],
+        images: [
+            "assets/images/tours/yumagual/01.jpg",
+            "assets/images/tours/yumagual/02.jpg",
+            "assets/images/tours/yumagual/03.jpg",
+            "assets/images/tours/yumagual/04.jpg",
+            "assets/images/tours/yumagual/05.jpg"
+        ],
         rating: 4.7,
         reviews: 14,
         price: { es: 250, en: 68 },
@@ -559,7 +614,13 @@ export const tours = [
     {
         id: "rio-rejo",
         category: "private",
-        images: ["assets/images/tours/rio-rejo/01.jpg"],
+        images: [
+            "assets/images/tours/rio-rejo/01.jpg",
+            "assets/images/tours/rio-rejo/02.jpg",
+            "assets/images/tours/rio-rejo/03.jpg",
+            "assets/images/tours/rio-rejo/04.jpg",
+            "assets/images/tours/rio-rejo/05.jpg"
+        ],
         rating: 4.8,
         reviews: 9,
         price: { es: 250, en: 68 },
