@@ -168,293 +168,300 @@
                                 class="px-6 py-2 rounded-full font-bold text-sm transition-all bg-surface-light dark:bg-surface-dark text-gray-500 hover:text-primary border border-gray-200 dark:border-gray-700"
                                 onclick="switchCategory('private')">Privados</button>
                         </div>
-
-                        <a class="hidden md:flex items-center gap-2 text-primary font-bold hover:underline mt-4 md:mt-0"
-                            href="#">
-                            <span data-i18n="popular.viewAll">Ver Todos los Paquetes</span> <span
-                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
                     </div>
 
                     <!-- DYNAMIC CARDS CONTAINER -->
                     <div id="featured-tours-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
                         <!-- Content injected by main.js -->
                     </div>
+                </div>
+            </div>
 
-                    <div class="flex md:hidden justify-center mt-6">
-                        <a class="flex items-center gap-2 text-primary font-bold bg-primary/10 px-6 py-3 rounded-lg hover:bg-primary/20 transition-colors"
-                            href="#">
-                            <span data-i18n="popular.viewAll">Ver Todos los Paquetes</span> <span
-                                class="material-symbols-outlined text-sm">arrow_forward</span>
-                        </a>
+            <div class="w-full py-16 px-4 md:px-10 bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 scroll-mt-24"
+                id="testimonials">
+                <div class="layout-container flex justify-center w-full">
+                    <div class="flex flex-col max-w-[1280px] w-full">
+                        <div class="flex flex-col items-center text-center gap-4 mb-12">
+                            <h2 class="text-[#111418] dark:text-white text-3xl font-bold"
+                                data-i18n="testimonials.title">Lo
+                                que dicen nuestros viajeros</h2>
+                            <p class="text-[#617589] dark:text-gray-400 max-w-2xl" data-i18n="testimonials.subtitle">
+                                Descubre por qué Wasi Tours es la mejor opción para explorar Cajamarca.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
+                                        SM</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">Sarah Mitchell</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"El tour a Cumbemayo con Wasi Tours
+                                    fue
+                                    impresionante. El guía estaba increíblemente informado y apasionado por la historia.
+                                    ¡Muy recomendado!"</p>
+                            </div>
+                            <!-- More testimonials can be added or made dynamic later, keeping 3 static for now for impact -->
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
+                                        DR</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">David Rodriguez</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star_half</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"Una experiencia perfecta desde la
+                                    reserva hasta el tour real. Granja Porcón es una visita obligada, y Wasi Tours lo
+                                    hizo
+                                    muy fácil."</p>
+                            </div>
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
+                                        JL</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">Jessica Liu</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"Vistas inolvidables en las
+                                    Ventanillas
+                                    de Otuzco. Wasi Tours brindó un servicio excelente y el transporte fue muy cómodo.
+                                    ¡5
+                                    estrellas!"</p>
+                            </div>
+                            <!-- New Testimonials -->
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
+                                        MR</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">Michael Ross</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"Namora y la Laguna San Nicolás son
+                                    una
+                                    joya
+                                    escondida. El paseo en bote fue muy relajante y divertido."</p>
+                            </div>
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
+                                        AK</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">Anna Kowalski</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"Me encantó el 'Llamado de las
+                                    Vacas' en
+                                    La
+                                    Collpa. ¡Una experiencia única! Gracias Wasi Tours por la organización."</p>
+                            </div>
+                            <div
+                                class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
+                                <span
+                                    class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <div
+                                        class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
+                                        CR</div>
+                                    <div>
+                                        <h4 class="text-[#111418] dark:text-white font-bold">Carlos Ruiz</h4>
+                                        <div class="flex text-amber-500 text-sm">
+                                            <span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star</span><span
+                                                class="material-symbols-outlined text-base fill-current">star_half</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-300 italic">"Excelente atención al cliente y
+                                    precios
+                                    justos. Definitivamente volveré a reservar con ellos en mi próximo viaje."</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="w-full py-16 px-4 md:px-10 bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 scroll-mt-24"
-            id="testimonials">
-            <div class="layout-container flex justify-center w-full">
-                <div class="flex flex-col max-w-[1280px] w-full">
-                    <div class="flex flex-col items-center text-center gap-4 mb-12">
-                        <h2 class="text-[#111418] dark:text-white text-3xl font-bold" data-i18n="testimonials.title">Lo
-                            que dicen nuestros viajeros</h2>
-                        <p class="text-[#617589] dark:text-gray-400 max-w-2xl" data-i18n="testimonials.subtitle">
-                            Descubre por qué Wasi Tours es la mejor opción para explorar Cajamarca.</p>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
-                                    SM</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">Sarah Mitchell</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"El tour a Cumbemayo con Wasi Tours fue
-                                impresionante. El guía estaba increíblemente informado y apasionado por la historia.
-                                ¡Muy recomendado!"</p>
-                        </div>
-                        <!-- More testimonials can be added or made dynamic later, keeping 3 static for now for impact -->
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
-                                    DR</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">David Rodriguez</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star_half</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"Una experiencia perfecta desde la
-                                reserva hasta el tour real. Granja Porcón es una visita obligada, y Wasi Tours lo hizo
-                                muy fácil."</p>
-                        </div>
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
-                                    JL</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">Jessica Liu</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"Vistas inolvidables en las Ventanillas
-                                de Otuzco. Wasi Tours brindó un servicio excelente y el transporte fue muy cómodo. ¡5
-                                estrellas!"</p>
-                        </div>
-                        <!-- New Testimonials -->
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
-                                    MR</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">Michael Ross</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"Namora y la Laguna San Nicolás son una
-                                joya
-                                escondida. El paseo en bote fue muy relajante y divertido."</p>
-                        </div>
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-secondary flex items-center justify-center text-white text-lg font-bold">
-                                    AK</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">Anna Kowalski</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"Me encantó el 'Llamado de las Vacas' en
-                                La
-                                Collpa. ¡Una experiencia única! Gracias Wasi Tours por la organización."</p>
-                        </div>
-                        <div
-                            class="flex flex-col p-6 rounded-2xl bg-background-light dark:bg-background-dark border border-gray-100 dark:border-gray-700 shadow-sm relative">
-                            <span
-                                class="material-symbols-outlined absolute top-6 right-6 text-primary/20 text-5xl">format_quote</span>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="size-12 rounded-full bg-primary flex items-center justify-center text-white text-lg font-bold">
-                                    CR</div>
-                                <div>
-                                    <h4 class="text-[#111418] dark:text-white font-bold">Carlos Ruiz</h4>
-                                    <div class="flex text-amber-500 text-sm">
-                                        <span class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star</span><span
-                                            class="material-symbols-outlined text-base fill-current">star_half</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-[#617589] dark:text-gray-300 italic">"Excelente atención al cliente y precios
-                                justos. Definitivamente volveré a reservar con ellos en mi próximo viaje."</p>
+            <div class="w-full bg-primary py-16 px-4">
+                <div class="layout-container flex justify-center w-full">
+                    <div class="flex flex-col max-w-[800px] w-full items-center text-center gap-6">
+                        <span class="material-symbols-outlined text-5xl text-white">mail</span>
+                        <h2 class="text-white text-3xl md:text-4xl font-bold tracking-tight"
+                            data-i18n="newsletter.title">No
+                            te pierdas la aventura</h2>
+                        <p class="text-blue-100 text-lg max-w-2xl" data-i18n="newsletter.text">Suscríbete a nuestro
+                            boletín
+                            para recibir consejos de viaje exclusivos, alertas de joyas ocultas y un 10% de descuento en
+                            tu
+                            primera reserva con Wasi Tours.</p>
+                        <div class="flex flex-col sm:flex-row w-full max-w-md gap-3 mt-4">
+                            <input
+                                class="flex-1 h-12 rounded-lg border-0 bg-white/90 px-4 text-[#111418] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-white"
+                                data-i18n-placeholder="newsletter.placeholder" type="email" />
+                            <button
+                                class="h-12 px-8 rounded-lg bg-secondary hover:bg-red-700 text-white font-bold transition-colors shadow-lg shadow-black/20"
+                                data-i18n="newsletter.button">
+                                Suscribirse
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="w-full bg-primary py-16 px-4">
-            <div class="layout-container flex justify-center w-full">
-                <div class="flex flex-col max-w-[800px] w-full items-center text-center gap-6">
-                    <span class="material-symbols-outlined text-5xl text-white">mail</span>
-                    <h2 class="text-white text-3xl md:text-4xl font-bold tracking-tight" data-i18n="newsletter.title">No
-                        te pierdas la aventura</h2>
-                    <p class="text-blue-100 text-lg max-w-2xl" data-i18n="newsletter.text">Suscríbete a nuestro boletín
-                        para recibir consejos de viaje exclusivos, alertas de joyas ocultas y un 10% de descuento en tu
-                        primera reserva con Wasi Tours.</p>
-                    <div class="flex flex-col sm:flex-row w-full max-w-md gap-3 mt-4">
-                        <input
-                            class="flex-1 h-12 rounded-lg border-0 bg-white/90 px-4 text-[#111418] placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-secondary focus:bg-white"
-                            data-i18n-placeholder="newsletter.placeholder" type="email" />
-                        <button
-                            class="h-12 px-8 rounded-lg bg-secondary hover:bg-red-700 text-white font-bold transition-colors shadow-lg shadow-black/20"
-                            data-i18n="newsletter.button">
-                            Suscribirse
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer
-            class="w-full bg-surface-light dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 pt-16 pb-8">
-            <div class="layout-container flex justify-center w-full px-4 lg:px-10">
-                <div class="flex flex-col max-w-[1280px] w-full gap-12">
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+            <footer
+                class="w-full bg-surface-light dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 pt-16 pb-8">
+                <div class="layout-container flex justify-center w-full px-4 lg:px-10">
+                    <div class="flex flex-col max-w-[1280px] w-full gap-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center gap-2 text-[#111418] dark:text-white">
+                                    <img src="assets/images/logo.png" alt="Wasi Tours Logo" class="h-8 w-auto" />
+                                    <span class="text-xl font-bold">Wasi Tours</span>
+                                </div>
+                                <p class="text-[#617589] dark:text-gray-400 text-sm">Tu puerta de entrada a la magia de
+                                    los
+                                    Andes.</p>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.company">Empresa
+                                </h4>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
+                                    data-i18n="footer.about">Sobre Nosotros</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
+                                    data-i18n="footer.careers">Carreras</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
+                                    data-i18n="footer.blog">Blog</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
+                                    data-i18n="footer.contact">Contacto</a>
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.popularTours">
+                                    Tours
+                                    Populares</h4>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
+                                    href="detail.html#namora">Namora</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
+                                    href="detail.html#collpa">La
+                                    Collpa</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
+                                    href="detail.html#city-tour">City
+                                    Tour</a>
+                                <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
+                                    href="detail.html#yanamarca">Castillo de Yanamarca</a>
+                            </div>
+                        </div>
                         <div class="flex flex-col gap-4">
-                            <div class="flex items-center gap-2 text-[#111418] dark:text-white">
-                                <img src="assets/images/logo.png" alt="Wasi Tours Logo" class="h-8 w-auto" />
-                                <span class="text-xl font-bold">Wasi Tours</span>
+                            <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.contactUs">
+                                Contáctanos</h4>
+                            <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-lg">call</span>
+                                <span>+51 910 913 870</span>
                             </div>
-                            <p class="text-[#617589] dark:text-gray-400 text-sm">Tu puerta de entrada a la magia de los
-                                Andes.</p>
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.company">Empresa</h4>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
-                                data-i18n="footer.about">Sobre Nosotros</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
-                                data-i18n="footer.careers">Carreras</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
-                                data-i18n="footer.blog">Blog</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm" href="#"
-                                data-i18n="footer.contact">Contacto</a>
-                        </div>
-                        <div class="flex flex-col gap-4">
-                            <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.popularTours">Tours
-                                Populares</h4>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
-                                href="detail.html#namora">Namora</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
-                                href="detail.html#collpa">La
-                                Collpa</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
-                                href="detail.html#city-tour">City
-                                Tour</a>
-                            <a class="text-[#617589] dark:text-gray-400 hover:text-primary text-sm"
-                                href="detail.html#yanamarca">Castillo de Yanamarca</a>
+                            <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-lg">mail</span>
+                                <span class="uppercase">FRANK.QUIROZ555@GMAIL.COM</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-lg">location_on</span>
+                                <span class="uppercase">JR. BELÉN 680</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
+                                <span class="material-symbols-outlined text-lg">badge</span>
+                                <span>RUC: 10735063478</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-4">
-                        <h4 class="text-[#111418] dark:text-white font-bold" data-i18n="footer.contactUs">
-                            Contáctanos</h4>
-                        <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
-                            <span class="material-symbols-outlined text-lg">call</span>
-                            <span>+51 910 913 870</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
-                            <span class="material-symbols-outlined text-lg">mail</span>
-                            <span class="uppercase">FRANK.QUIROZ555@GMAIL.COM</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
-                            <span class="material-symbols-outlined text-lg">location_on</span>
-                            <span class="uppercase">JR. BELÉN 680</span>
-                        </div>
-                        <div class="flex items-center gap-2 text-[#617589] dark:text-gray-400 text-sm">
-                            <span class="material-symbols-outlined text-lg">badge</span>
-                            <span>RUC: 10735063478</span>
+                    <div
+                        class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 dark:border-gray-800 pt-8 gap-4">
+                        <p class="text-[#617589] dark:text-gray-500 text-sm" data-i18n="footer.rights">© 2024 Wasi
+                            Tours. Todos los derechos reservados.</p>
+                        <div class="flex gap-6">
+                            <a class="text-gray-400 hover:text-primary" href="#"><span
+                                    class="sr-only">Facebook</span>FB</a>
+                            <a class="text-gray-400 hover:text-primary" href="#"><span
+                                    class="sr-only">Instagram</span>IG</a>
+                            <a class="text-gray-400 hover:text-primary" href="#"><span
+                                    class="sr-only">Twitter</span>TW</a>
                         </div>
                     </div>
                 </div>
-                <div
-                    class="flex flex-col md:flex-row justify-between items-center border-t border-gray-100 dark:border-gray-800 pt-8 gap-4">
-                    <p class="text-[#617589] dark:text-gray-500 text-sm" data-i18n="footer.rights">© 2024 Wasi
-                        Tours. Todos los derechos reservados.</p>
-                    <div class="flex gap-6">
-                        <a class="text-gray-400 hover:text-primary" href="#"><span class="sr-only">Facebook</span>FB</a>
-                        <a class="text-gray-400 hover:text-primary" href="#"><span
-                                class="sr-only">Instagram</span>IG</a>
-                        <a class="text-gray-400 hover:text-primary" href="#"><span class="sr-only">Twitter</span>TW</a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    </footer>
+        </div>
+        </footer>
 
-    <a aria-label="Chat en WhatsApp"
-        class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
-        href="https://wa.me/51910913870?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20reservar%20un%20tour%20para..."
-        target="_blank">
-        <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
-            </path>
-        </svg>
-    </a>
+        <a aria-label="Chat en WhatsApp"
+            class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#25D366]"
+            href="https://wa.me/51910913870?text=Hola%2C%20vi%20su%20p%C3%A1gina%20web%20y%20quiero%20reservar%20un%20tour%20para..."
+            target="_blank">
+            <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z">
+                </path>
+            </svg>
+        </a>
     </div>
     <script type="module" src="assets/js/main.js"></script>
 </body>
