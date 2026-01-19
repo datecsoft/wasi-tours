@@ -41,10 +41,10 @@ function switchCategory(category) {
         tabPopular.classList.add('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
         tabPopular.classList.remove('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
 
-        tabPrivate.classList.remove('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPrivate.classList.remove('bg-secondary', 'text-white', 'shadow-lg', 'shadow-red-500/20');
         tabPrivate.classList.add('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
     } else {
-        tabPrivate.classList.add('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
+        tabPrivate.classList.add('bg-secondary', 'text-white', 'shadow-lg', 'shadow-red-500/20');
         tabPrivate.classList.remove('bg-surface-light', 'dark:bg-surface-dark', 'text-gray-500', 'border');
 
         tabPopular.classList.remove('bg-primary', 'text-white', 'shadow-lg', 'shadow-blue-500/20');
