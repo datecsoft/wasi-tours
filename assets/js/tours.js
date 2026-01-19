@@ -332,5 +332,51 @@ export const tours = [
         notIncluded: { es: ["Almuerzo"], en: ["Lunch"] },
         itinerary: [],
         faq: []
+    },
+    {
+        id: "city-tour",
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Cajamarca6.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/f/f6/PLAZA_DE_ARMAS_DE_CAJAMARCA.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/c/c5/El_cuarto_del_Rescate%2C_Cajamarca%2C_Peru.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/d/d1/Iglesia_de_San_Francisco%2C_Cajamarca%2C_Per%C3%BA%2C_2015-07-31%2C_DD_10.JPG"
+        ],
+        rating: 4.9,
+        reviews: 210,
+        price: { es: 40, en: 15 },
+        duration: {
+            es: "4 Horas",
+            en: "4 Hours"
+        },
+        groupSize: { es: "Max 15 personas", en: "Max 15 people" },
+        type: { es: "Cultural", en: "Cultural" },
+        location: "Centro Histórico, Cajamarca",
+        title: {
+            es: "City Tour Cajamarca",
+            en: "Cajamarca City Tour"
+        },
+        description: {
+            es: "Recorre las joyas arquitectónicas coloniales y los sitios históricos más importantes de la ciudad.",
+            en: "Tour the colonial architectural gems and the most important historical sites of the city."
+        },
+        fullDescription: {
+            es: "Sumérgete en la historia de Cajamarca con nuestro City Tour. Visitaremos la histórica Plaza de Armas, el Cuarto del Rescate (el único vestigio inca en la ciudad), el Complejo Monumental Belén, y la colina de Santa Apolonia para una vista panorámica inigualable.",
+            en: "Immerse yourself in the history of Cajamarca with our City Tour. We will visit the historic Plaza de Armas, the Ransom Room (the only Inca vestige in the city), the Belén Monumental Complex, and Santa Apolonia Hill for an invalid panoramic view."
+        },
+        highlights: {
+            es: ["Cuarto del Rescate", "Plaza de Armas", "Mirador Santa Apolonia", "Iglesias Coloniales"],
+            en: ["Ransom Room", "Main Square", "Santa Apolonia Viewpoint", "Colonial Churches"]
+        },
+        includes: { es: ["Transporte", "Guía oficial", "Entradas"], en: ["Transport", "Official guide", "Entry tickets"] },
+        notIncluded: { es: ["Almuerzo", "Propinas"], en: ["Lunch", "Tips"] },
+        itinerary: [
+            { time: "09:00 AM", title: { es: "Inicio", en: "Start" }, desc: { es: "Reunión en la Plaza de Armas.", en: "Meeting at the Main Square." } },
+            { time: "09:30 AM", title: { es: "Cuarto del Rescate", en: "Ransom Room" }, desc: { es: "Visita al lugar histórico del Inca Atahualpa.", en: "Visit to the historical site of Inca Atahualpa." } },
+            { time: "10:30 AM", title: { es: "Iglesias", en: "Churches" }, desc: { es: "Recorrido por San Francisco y Belén.", en: "Tour of San Francisco and Belén." } },
+            { time: "12:00 PM", title: { es: "Santa Apolonia", en: "Santa Apolonia" }, desc: { es: "Subida al mirador.", en: "Climb to the viewpoint." } }
+        ],
+        faq: [
+            { q: { es: "¿Se camina mucho?", en: "Is there a lot of walking?" }, a: { es: "Es un recorrido a pie moderado.", en: "It is a moderate walking tour." } }
+        ]
     }
 ];
